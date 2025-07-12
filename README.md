@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Y Combinator Company Scraper
+
+A Next.js application that scrapes company information from Y Combinator filtered company lists.
+
+## Features
+
+- **Web Scraping**: Uses Playwright to scrape Y Combinator company pages
+- **Company Data Extraction**: Extracts name, title, and description for each company
+- **Modern UI**: Clean, responsive interface built with Tailwind CSS
+- **Real-time Results**: Displays scraped company data in a beautiful format
+
+## How It Works
+
+1. **Input a Y Combinator URL**: Paste a filtered Y Combinator companies URL (e.g., `https://www.ycombinator.com/companies?batch=Spring%202025&query=cursor`)
+2. **Automated Scraping**: The app visits the page, finds all company profile links
+3. **Data Extraction**: For each company, it extracts:
+   - Company name
+   - One-line title/tagline
+   - Detailed description
+4. **Results Display**: Shows all scraped companies in a clean, organized format
+
+## Example
+
+For a URL like: `https://www.ycombinator.com/companies?batch=Spring%202025&query=cursor`
+
+The scraper will find companies like:
+- **StarSling** - "Cursor for DevOps" - Full description about their agentic developer homepage
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Install Playwright browsers**:
+   ```bash
+   npx playwright install chromium
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. **Open your browser** and navigate to `http://localhost:3001`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## API Endpoint
 
-## Learn More
+The scraping functionality is available via API at:
+- **POST** `/api/scrape`
+- **Body**: `{ "url": "https://www.ycombinator.com/companies?..." }`
 
-To learn more about Next.js, take a look at the following resources:
+## Technology Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js 15** - React framework with App Router
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **Playwright** - Web scraping
+- **React Hooks** - State management
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Notes
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- The scraper is limited to 10 companies per request for testing purposes
+- Includes respectful delays between requests
+- Handles errors gracefully and continues with other companies if one fails
+- Uses headless browser automation for reliable scraping

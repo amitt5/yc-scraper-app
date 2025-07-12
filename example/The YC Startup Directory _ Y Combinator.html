@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://www.ycombinator.com/companies?batch=Spring%202025 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>The YC Startup Directory | Y Combinator</title><meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="k4Dv_m_InRoqUjIMuLji-FOBUxEm5YftpSN8Sc9T18ajltBHPdYIcnXtZFXqWFCzZaUKKQrrTt1o-nYv3MQ5Bg"><meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible"><script type="text/javascript" async="" src="./The YC Startup Directory _ Y Combinator_files/js" nonce=""></script><script type="text/javascript" async="" src="./The YC Startup Directory _ Y Combinator_files/linkid.js" nonce=""></script><script async="" src="./The YC Startup Directory _ Y Combinator_files/analytics.js"></script><script nonce="">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-51714649-1', 'auto');
+ga('require', 'linkid', 'linkid.js');
+ga('send', 'pageview');
+
+function parseUrl(url){
+  var a = document.createElement('a');
+  a.href = url;
+  return {
+    href: a.href,
+    host: a.host || location.host,
+    port: ('0' === a.port || '' === a.port) ? port(a.protocol) : a.port,
+    hash: a.hash,
+    hostname: a.hostname || location.hostname,
+    pathname: a.pathname.charAt(0) != '/' ? '/' + a.pathname : a.pathname,
+    protocol: !a.protocol || ':' == a.protocol ? location.protocol : a.protocol,
+    search: a.search,
+    query: a.search.slice(1)
+  };
+};
+
+function canonical() {
+  var tags = document.getElementsByTagName('link');
+  for (var i = 0, tag; tag = tags[i]; i++) {
+    if (tag.getAttribute('rel') === 'canonical') {
+      return tag.getAttribute('href');
+    }
+  }
+}
+
+function canonicalPath() {
+  var canon = canonical();
+  if (!canon) return window.location.pathname;
+  return parseUrl(canon).pathname;
+}
+
+function canonicalUrl(search) {
+  var canon = canonical();
+  if (canon) return canon.indexOf('?') !== -1 ? canon : canon + search;
+  var url = window.location.href;
+  var i = url.indexOf('#');
+  return i === -1 ? url : url.slice(0, i);
+}</script><meta content="summary_large_image" name="twitter:card"><meta content="@ycombinator" name="twitter:site"><meta content="/assets/ycdc/companies/yc-startup-directory.png" name="twitter:image"><meta content="initial-scale=1, width=device-width, height=device-height" name="viewport"><meta content="follow" name="robots"><meta content="The YC Startup Directory" name="title"><meta content="A list of companies YC has funded across many verticals including hardware, edtech, biotech, healthcare, developer tools, consumer and enterprise, to name a few." name="description"><meta content="/assets/ycdc/companies/yc-startup-directory.png" name="image"><meta content="887" name="image_width"><meta content="419" name="image_height"><meta content="website" property="og:type"><meta content="en_US" property="og:locale"><meta content="Y Combinator" property="og:site_name"><meta content="The YC Startup Directory | Y Combinator" property="og:title"><meta content="/assets/ycdc/companies/yc-startup-directory.png" property="og:image"><meta content="/assets/ycdc/companies/yc-startup-directory.png" property="og:image:url"><meta content="/assets/ycdc/companies/yc-startup-directory.png" property="og:image:secure_url"><meta content="https://www.ycombinator.com/companies" property="og:url"><meta content="A list of companies YC has funded across many verticals including hardware, edtech, biotech, healthcare, developer tools, consumer and enterprise, to name a few." property="og:description"><meta content="887" property="og:image:width"><meta content="419" property="og:image:height"><meta content="23YLYcfP-tmEiWdemh9h6Wi6DIxisMtUtcowUJBSvH0" property="google-site-verification"><style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-thin: normal 100 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+          transform: scale(var(--fa-counter-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(var(--fa-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  -webkit-animation-name: fa-beat;
+          animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  -webkit-animation-name: fa-bounce;
+          animation-name: fa-bounce;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  -webkit-animation-name: fa-fade;
+          animation-name: fa-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  -webkit-animation-name: fa-beat-fade;
+          animation-name: fa-beat-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  -webkit-animation-name: fa-flip;
+          animation-name: fa-flip;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  -webkit-animation-name: fa-shake;
+          animation-name: fa-shake;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 2s);
+          animation-duration: var(--fa-animation-duration, 2s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+          animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    -webkit-animation-delay: -1ms;
+            animation-delay: -1ms;
+    -webkit-animation-duration: 1ms;
+            animation-duration: 1ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+    -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+  }
+}
+@-webkit-keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@-webkit-keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@-webkit-keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@-webkit-keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@-webkit-keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@-webkit-keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  -webkit-transform: rotate(var(--fa-rotate-angle, 0));
+          transform: rotate(var(--fa-rotate-angle, 0));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse,
+.fa-duotone.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}</style><link href="https://bookface-static.ycombinator.com/assets/ycdc/favicon-c8a914eeeba9fe6f7a863b35608b55aeedd7c1ff409c97b9ecb96b7a6c278d70.ico" rel="icon" type="image/x-icon"><link href="https://bookface-static.ycombinator.com/assets/ycdc/favicon-c8a914eeeba9fe6f7a863b35608b55aeedd7c1ff409c97b9ecb96b7a6c278d70.ico" rel="shortcut icon" type="image/x-icon"><link href="https://www.ycombinator.com/blog/feed" rel="alternate" type="application/rss+xml"><link href="https://plus.google.com/113116812547402050884" rel="publisher"><script src="./The YC Startup Directory _ Y Combinator_files/js(1)" async="" defer=""></script><script nonce="">window.process = {
+  cwd: () => "/",
+  env: {},
+};
+window.AlgoliaOpts = {"app":"45BWZJ1SGC","key":"MjBjYjRiMzY0NzdhZWY0NjExY2NhZjYxMGIxYjc2MTAwNWFkNTkwNTc4NjgxYjU0YzFhYTY2ZGQ5OGY5NDMxZnJlc3RyaWN0SW5kaWNlcz0lNUIlMjJZQ0NvbXBhbnlfcHJvZHVjdGlvbiUyMiUyQyUyMllDQ29tcGFueV9CeV9MYXVuY2hfRGF0ZV9wcm9kdWN0aW9uJTIyJTVEJnRhZ0ZpbHRlcnM9JTVCJTIyeWNkY19wdWJsaWMlMjIlNUQmYW5hbHl0aWNzVGFncz0lNUIlMjJ5Y2RjJTIyJTVE"};
+window.RAILS_ENV = 'production';</script><script src="./The YC Startup Directory _ Y Combinator_files/ycdc-styles-CV6s45xX.js" crossorigin="anonymous" type="module"></script>
+<script src="./The YC Startup Directory _ Y Combinator_files/inertia-ycdc-DEHJl0OL.js" crossorigin="anonymous" type="module"></script><link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-O0Gaa3h1.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/component_registry-GW-5lqhE.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/core.browser.esm-DBhkASqY.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/_commonjsHelpers-BosuxZz1.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-uSw9VvEd.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-D7R8_Bo3.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/mande-58egg929.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index.esm-iioy4ZJJ.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/cjs-DMmwEoUs.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-CpEsc6A5.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/___vite-browser-external_commonjs-proxy-DRaEfepn.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/Layout-ChJM-FIp.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/preload-helper-CnIRovmK.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/QueryClientProvider-C99QyZBe.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/inheritsLoose-1HkgTRWY.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/setPrototypeOf-DgZC2w_0.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/extends-CCbyfPlC.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-C9T_OsH9.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-cIyYH0z9.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/queryClient-BeP-NYnl.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/queryClient-BaGmKJSc.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/mutation-5bfmlNEI.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/LayoutContext--bjyyPgh.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-CyiIW7IA.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/utils-BKrstCcm.js" as="script" crossorigin="anonymous"><link rel="stylesheet" href="./The YC Startup Directory _ Y Combinator_files/ycdc-styles-BQ7e9C-F.css" media="screen">
+<link rel="stylesheet" href="./The YC Startup Directory _ Y Combinator_files/Launches-PFeFtpkK.css" media="screen">
+<link rel="stylesheet" href="./The YC Startup Directory _ Y Combinator_files/LaunchesFormPage-DIwtZREJ.css" media="screen">
+<link rel="stylesheet" href="./The YC Startup Directory _ Y Combinator_files/LaunchesIndexPage-Czh_VQfj.css" media="screen">
+<link rel="stylesheet" href="./The YC Startup Directory _ Y Combinator_files/LaunchesPage-CHh592ED.css" media="screen">
+<link rel="stylesheet" href="./The YC Startup Directory _ Y Combinator_files/LaunchesShowPage-r0_GBVMe.css" media="screen">
+<link rel="stylesheet" href="./The YC Startup Directory _ Y Combinator_files/WhyPage-DFDzpL99.css" media="screen">
+<link rel="stylesheet" href="./The YC Startup Directory _ Y Combinator_files/Breadcrumb-Lp92hyVA.css" media="screen">
+<link rel="stylesheet" href="./The YC Startup Directory _ Y Combinator_files/nouislider-v_DV34yi.css" media="screen">
+<link rel="stylesheet" href="./The YC Startup Directory _ Y Combinator_files/editor-8XC9z0Wx.css" media="screen">
+<link rel="stylesheet" href="./The YC Startup Directory _ Y Combinator_files/history-BY5Jnflb.css" media="screen">
+<link rel="stylesheet" href="./The YC Startup Directory _ Y Combinator_files/Dropdown-CrwX-3I6.css" media="screen">
+<link rel="stylesheet" href="./The YC Startup Directory _ Y Combinator_files/index-CndHIVUr.css" media="screen"><script src="./The YC Startup Directory _ Y Combinator_files/blog-54db898b518e809d1aaeaacf7e7cc20fa35375fb3348fc2b56cea781f5cdfa55.js" defer="defer"></script><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/IndexPage-Bs5FNy_h.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/core.browser.esm-DBhkASqY.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/_commonjsHelpers-BosuxZz1.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/withRailsContext-BsOal37W.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/Page-BxRzjCS_.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/ycombinator-logo-CsFFMZDD.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/XIcon-CncUNjtj.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/classNames-CN4lTu6a.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/ChevronDownIcon-B3Dx3bf2.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/use-root-containers-DRCdL0UD.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/index-uSw9VvEd.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/index-D7R8_Bo3.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/use-resolve-button-type-B9mRj4wz.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/transition-EyX89od-.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/index.esm-iioy4ZJJ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/cjs-DMmwEoUs.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/index-CpEsc6A5.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/___vite-browser-external_commonjs-proxy-DRaEfepn.js"><link rel="stylesheet" crossorigin="" href="./The YC Startup Directory _ Y Combinator_files/ApplyBanner-Bc3weZge.css"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/Section-QsCN7iGu.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/cls-CBlrQJwJ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/bundle-mjs-BNYwEHuQ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/clsx-B-dksMZM.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/YcdcCompanyDirectory-Bp87WbAR.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/CompanyListItemContent-Cf7pDCDe.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/lodash-BaWm0kzi.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/SharedDirectory-62YWSW2j.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/algoliasearch-B4rcbc_d.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/_commonjs-dynamic-modules-TDtrdbi3.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/DoubleSliderFacet-BaL46ogc.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/styles.module-B9UD8XrS.js"><link rel="stylesheet" crossorigin="" href="./The YC Startup Directory _ Y Combinator_files/styles-BHWl_BAL.css"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/InfoIconTooltip-Dvuqn2-T.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/index-vo4P-suh.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/index.es-pKg-UU5a.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/index-DNCvFDQQ.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/index-Chjiymov.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/Tooltip-BjNGJBKu.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/floating-ui.dom-BtkhkZIX.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/index-C9T_OsH9.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/index-cIyYH0z9.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/v4-SoommWqA.js"><link rel="stylesheet" crossorigin="" href="./The YC Startup Directory _ Y Combinator_files/DoubleSliderFacet-C3kMkH91.css"><link rel="stylesheet" crossorigin="" href="./The YC Startup Directory _ Y Combinator_files/nouislider-v_DV34yi(1).css"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/index-1r-HuIfP.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/QueryStringUtils-BnqGyoEy.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/_baseGet-BcNGC96k.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/isSymbol-B8Pdfa-7.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/_baseIteratee-BFGwFmBj.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/identity-8Ezuc4mB.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/get-D4eN-cjS.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/_basePickBy-YzWyGNOv.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/_baseSet-Dpu-Mij2.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/_baseAssignValue-CkmUuoA6.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/_defineProperty-DuYznukG.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/_getPrototype-DAwmmqHM.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/ThrottledInfiniteScroll-C_CH0md-.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/InfiniteScroll-cYptAzUb.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/throttle-D8cvT2-b.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/debounce-D_jClmLb.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/util-CA4B9nwS.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/rruleset-BywWQN1s.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/tslib.es6-CMwweBXX.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/mande-58egg929.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/authorizedFetch-DYO9WpPs.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/index-CRdwx0oD.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/csrf-DWyi7aX-.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/DisjunctiveFacet-DX9YnrbR.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/orderBy-Doweu5QY.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/_baseOrderBy-BOw2zNH-.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/cn-1oDqH9c4.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/clsx.m-CH7BE6MN.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/InlineLoader-ChDzgOtY.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/CompanySizeChoices-h5iPbGvR.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/Pills-8uIqXhi_.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/index-3ZpU7nbN.js"><link rel="modulepreload" as="script" crossorigin="" href="https://www.ycombinator.com/vite/assets/ResponsiveProse-DcR3CUzk.js"><style>
+    #nprogress {
+      pointer-events: none;
+    }
+
+    #nprogress .bar {
+      background: #29d;
+
+      position: fixed;
+      z-index: 1031;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 2px;
+    }
+
+    #nprogress .peg {
+      display: block;
+      position: absolute;
+      right: 0px;
+      width: 100px;
+      height: 100%;
+      box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+      opacity: 1.0;
+
+      transform: rotate(3deg) translate(0px, -4px);
+    }
+
+    #nprogress .spinner {
+      display: block;
+      position: fixed;
+      z-index: 1031;
+      top: 15px;
+      right: 15px;
+    }
+
+    #nprogress .spinner-icon {
+      width: 18px;
+      height: 18px;
+      box-sizing: border-box;
+
+      border: solid 2px transparent;
+      border-top-color: #29d;
+      border-left-color: #29d;
+      border-radius: 50%;
+
+      animation: nprogress-spinner 400ms linear infinite;
+    }
+
+    .nprogress-custom-parent {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .nprogress-custom-parent #nprogress .spinner,
+    .nprogress-custom-parent #nprogress .bar {
+      position: absolute;
+    }
+
+    @keyframes nprogress-spinner {
+      0%   { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style><script type="text/javascript" charset="UTF-8" src="./The YC Startup Directory _ Y Combinator_files/common.js" nonce=""></script><script type="text/javascript" charset="UTF-8" src="./The YC Startup Directory _ Y Combinator_files/util.js" nonce=""></script></head><body class="retro ycdc2 companies index"><div data-page="{&quot;component&quot;:&quot;ycdc_new/pages/Companies/IndexPage&quot;,&quot;props&quot;:{&quot;env&quot;:&quot;production&quot;,&quot;currentBatch&quot;:&quot;S25&quot;},&quot;url&quot;:&quot;/companies?batch=Spring%202025&quot;,&quot;version&quot;:&quot;6243774725d2a6cb8e593d7de4ff01694bca3771&quot;,&quot;encryptHistory&quot;:false,&quot;clearHistory&quot;:false,&quot;rails_context&quot;:{&quot;railsEnv&quot;:&quot;production&quot;,&quot;inMailer&quot;:false,&quot;i18nLocale&quot;:&quot;en&quot;,&quot;i18nDefaultLocale&quot;:&quot;en&quot;,&quot;href&quot;:&quot;https://www.ycombinator.com/companies?batch=Spring%202025&quot;,&quot;location&quot;:&quot;/companies?batch=Spring%202025&quot;,&quot;scheme&quot;:&quot;https&quot;,&quot;host&quot;:&quot;www.ycombinator.com&quot;,&quot;port&quot;:null,&quot;pathname&quot;:&quot;/companies&quot;,&quot;search&quot;:&quot;batch=Spring%202025&quot;,&quot;httpAcceptLanguage&quot;:&quot;en-US,en;q=0.9&quot;,&quot;applyBatchLong&quot;:&quot;Fall 2025&quot;,&quot;applyBatchShort&quot;:&quot;F2025&quot;,&quot;applyDeadlineShort&quot;:&quot;August  4&quot;,&quot;ycdcRetroMode&quot;:true,&quot;currentUser&quot;:{&quot;id&quot;:2881263,&quot;admin&quot;:false,&quot;waas_admin&quot;:false,&quot;yc_partner&quot;:false,&quot;current_company&quot;:null,&quot;company_for_deals&quot;:null,&quot;full_name&quot;:&quot;AMIT GOEL&quot;,&quot;first_name&quot;:&quot;AMIT&quot;,&quot;hnid&quot;:&quot;amitgyl&quot;},&quot;serverSide&quot;:null},&quot;id&quot;:&quot;ycdc_new/pages/Companies/IndexPage-react-component-f1d18491-6fa2-4cac-a111-19e6998b0d18&quot;,&quot;server_side&quot;:null}" data-reactroot="" id="ycdc_new/pages/Companies/IndexPage-react-component-f1d18491-6fa2-4cac-a111-19e6998b0d18"><div class="no-scroll-behind relative isolate z-10"><div data-headlessui-state=""><header class="relative mx-auto leading-tight max-w-ycdc-page"><nav class="flex flex-row items-start border-retro-sectionBorder py-[10px] sm:flex-row sm:items-center sm:border-b sm:py-[20px]"><div class="flex w-full flex-1 items-start"><div class="mr-[26px] leading-none"><a class="inline-block h-[56px] w-[56px]" href="https://www.ycombinator.com/" title="Y Combinator"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQEAAAEBCAMAAABPMuDPAAAAQlBMVEXyZSLyZSLyZSLyZSLyZSL6roH91br2ilD+6tr4nGn0eDf7wp3+9e3zbyz3k1z0gUP7uI/5pXX+38n8y6z////yZSKuMvVfAAAABXRSTlOAQMBgICelMzEAAAOgSURBVHhe5MABDQAAAIIw3eifmSB8vA3Zt5vcuGEgCsLeUBSpnxnb4f2vmn068xK5Z8FuFQ8gCB9q80Dw42Pc+3y8UQABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQACBR7GnuAF6MafNKnDsv+xx/+1mv3nOKjDKXwRWbwIWYJl4F6wigvclUCcWaCKCeRKwAtNFoBN4TC1wigjelMA2+S5YRATv+VyfXKC+NYIqEphVQEfgT2Dv0ws8VAT+BEqAXbCJCPwJHAEEuorAn0AAARGBO4H1CCFw7O+JoArIuQVGERH4EhgBBFQE/gQmF9ARnP4EljG5gB5Iiz+BGkBAreTqTyCAgIzAnUAogdMbwSIm0cQCeiAtvgR6MIEqInAkEEBARuBKIJzAwxOB5SsBb822n0dQxSoOJNBFBI4EAgmMp4jAkUAAATWQ6s8SaEFvz8vPIqhiWAYQcEQgEogqMD5FBBcS+BrBBPRAqtcTqIEF2vUIqsgmgIAjApFAaIF6NQKbwPcIKKAHUr2WQI8k4I+gilUcQMARgUggvEC/EkEzAM8E7wu2CxGsdhJFEvBH0MQqDiegV3J1JBBQ4NhFBDqBzyTvC4qIQCawjgwCOgKdQIstoFdydSQQRcD2rSNoVimRQPuPCFaLFF1AR7A5EggloK/BdAIZBPRVqE6ghxLwR7BaoBQCOgKdQDqBLiIQCSQSGJuIoNlJlEVAR3C8TKCkfHX7fLn+T5tASoFjf9X6YmlSCozyYvxVO4kSCegI1r8n0FIJ6IF0igQyCej9txiWZAI6gsfoViWxwPiy+2gzqzi1QLUR2ATSCeiBtBuSfAI6AjsWkguM738I9PQC3ZFADoGxKYC95xfQEZRxA4FRRALHLQSOXSSQXkBHsB75BXQEbWQV0APJruL8AmMVCaQW0BEsI5uAXsn21FsJVJFAZgH9juJmAsVOorsLlLsJIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAm3547QAAoGPFkAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBH6XAwc0AAAAAME2+ncWxOXNAI6Cs14i3Db7AAAAAElFTkSuQmCC" class="h-full w-full" alt="Y Combinator" width="56" height="56"></a></div><div class="ml-[30px] hidden flex-1 sm:ml-0 sm:block sm:h-[40px] sm:pt-[18px]"><div class="relative mb-1 mr-4 inline-block"><a target="" class="text-[#222] hover:text-linkColor cursor-pointer" href="https://www.ycombinator.com/about">About</a><div class="absolute top-[97%] z-30 hidden"><div class="mt-2 rounded-lg bg-white shadow-lg focus:outline-none"><div class="flex w-max flex-col px-1 py-1 text-gray-800"><a class="px-4 py-2 hover:bg-gray-200" target="" href="https://www.ycombinator.com/about">What Happens at YC?</a><a class="px-4 py-2 hover:bg-gray-200" target="" href="https://www.ycombinator.com/apply">Apply</a><a class="px-4 py-2 hover:bg-gray-200" target="" href="https://www.ycombinator.com/interviews">YC Interview Guide</a><a class="px-4 py-2 hover:bg-gray-200" target="" href="https://www.ycombinator.com/faq">FAQ</a><a class="px-4 py-2 hover:bg-gray-200" target="" href="https://www.ycombinator.com/people">People</a><a class="px-4 py-2 hover:bg-gray-200" target="" href="https://www.ycombinator.com/blog">YC Blog</a></div></div></div></div><div class="relative mb-1 mr-4 inline-block"><a href="https://www.ycombinator.com/companies" target="" class="text-[#222] hover:text-linkColor cursor-pointer">Companies</a><div class="absolute top-[97%] z-30 hidden"><div class="mt-2 rounded-lg bg-white shadow-lg focus:outline-none"><div class="flex w-max flex-col px-1 py-1 text-gray-800"><a class="px-4 py-2 hover:bg-gray-200" href="https://www.ycombinator.com/companies" target="">Startup Directory</a><a class="px-4 py-2 hover:bg-gray-200" href="https://www.ycombinator.com/companies/founders" target="">Founder Directory</a><a class="px-4 py-2 hover:bg-gray-200" href="https://www.ycombinator.com/launches" target="">Launch YC</a></div></div></div></div><div class="relative mb-1 mr-4 inline-block"><a href="https://www.ycombinator.com/jobs" target="" class="text-[#222] hover:text-linkColor cursor-pointer">Startup Jobs</a><div class="absolute top-[97%] z-30 hidden"><div class="mt-2 rounded-lg bg-white shadow-lg focus:outline-none"><div class="flex w-max flex-col px-1 py-1 text-gray-800"><a class="px-4 py-2 hover:bg-gray-200" href="https://www.ycombinator.com/jobs" target="">All Jobs</a><a class="px-4 py-2 hover:bg-gray-200" href="https://www.ycombinator.com/jobs/role/software-engineer" target="">◦ Engineering</a><a class="px-4 py-2 hover:bg-gray-200" href="https://www.ycombinator.com/jobs/role/operations" target="">◦ Operations</a><a class="px-4 py-2 hover:bg-gray-200" href="https://www.ycombinator.com/jobs/role/marketing" target="">◦ Marketing</a><a class="px-4 py-2 hover:bg-gray-200" href="https://www.ycombinator.com/jobs/role/sales" target="">◦ Sales</a><a class="px-4 py-2 hover:bg-gray-200" href="https://www.ycombinator.com/startup-job-guide" target="">Startup Job Guide</a><a class="px-4 py-2 hover:bg-gray-200" href="https://www.ycombinator.com/blog/jobs" target="">YC Startup Jobs Blog</a></div></div></div></div><div class="relative mb-1 mr-4 inline-block"><a href="https://www.ycombinator.com/cofounder-matching" target="" class="text-[#222] hover:text-linkColor cursor-pointer">Find a Co-Founder</a><div class="absolute top-[97%] z-30 hidden"><div class="mt-2 rounded-lg bg-white shadow-lg focus:outline-none"><div class="flex w-max flex-col px-1 py-1 text-gray-800"></div></div></div></div><div class="relative mb-1 mr-4 inline-block"><a href="https://www.ycombinator.com/library" target="" class="text-[#222] hover:text-linkColor cursor-pointer">Library</a><div class="absolute top-[97%] z-30 hidden"><div class="mt-2 rounded-lg bg-white shadow-lg focus:outline-none"><div class="flex w-max flex-col px-1 py-1 text-gray-800"></div></div></div></div><div class="relative mb-1 mr-4 inline-block"><a href="https://www.ycombinator.com/documents" target="" class="text-[#222] hover:text-linkColor cursor-pointer">SAFE</a><div class="absolute top-[97%] z-30 hidden"><div class="mt-2 rounded-lg bg-white shadow-lg focus:outline-none"><div class="flex w-max flex-col px-1 py-1 text-gray-800"></div></div></div></div><div class="relative mb-1 mr-4 inline-block"><a href="https://www.ycombinator.com/library" target="" class="text-[#222] hover:text-linkColor cursor-pointer">Resources</a><div class="absolute top-[97%] z-30 hidden"><div class="mt-2 rounded-lg bg-white shadow-lg focus:outline-none"><div class="flex w-max flex-col px-1 py-1 text-gray-800"><a class="px-4 py-2 hover:bg-gray-200" href="https://startupschool.org/?utm_source=yc&amp;utm_campaign=ycdc_header" target="">Startup School</a><a class="px-4 py-2 hover:bg-gray-200" href="https://www.ycombinator.com/subscribe" target="">Newsletter</a><a class="px-4 py-2 hover:bg-gray-200" href="https://www.ycombinator.com/rfs" target="">Requests for Startups</a><a class="px-4 py-2 hover:bg-gray-200" href="https://www.ycombinator.com/investors" target="">For Investors</a><a class="px-4 py-2 hover:bg-gray-200" href="https://news.ycombinator.com/" target="_target">Hacker News</a><a class="px-4 py-2 hover:bg-gray-200" href="https://bookface.ycombinator.com/" target="_target">Bookface</a></div></div></div></div></div></div><div><div class="flex items-center sm:hidden"><button class="inline-flex items-center justify-center bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-500" type="button" aria-expanded="false" data-headlessui-state="" id="headlessui-popover-button-3"><span class="sr-only">Open main menu</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" class="h-6 w-6" width="1.25em" height="1.25em"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path></svg></button></div><div class="ml-auto hidden pt-[30px] text-right sm:block sm:h-[60px] sm:pt-[20px]"><a href="https://account.ycombinator.com/">amitgyl</a><span> · </span><a href="https://www.ycombinator.com/session/logout">Logout</a><a class="apply-btn ycdc-retro-btn ml-[13px] mt-[-10px] bg-brand hover:bg-[#ee5d19]" href="https://www.ycombinator.com/apply" title="Apply for F2025 batch.">Apply</a></div></div></nav></header></div><div style="position: fixed; top: 1px; left: 1px; width: 1px; height: 0px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; border-width: 0px; display: none;"></div></div><div class="mx-auto max-w-ycdc-page"><section class="relative isolate z-0 border-retro-sectionBorder sm:pr-[13px] ycdcPlus:pr-0 border-b pt-6 lg:pt-9 pb-6 lg:pb-9"><div class="prose prose-sm sm:prose-base max-w-full"><h1 class="!text-4xl !font-bold">Startup Directory</h1><p>Since 2005, we have invested in over 5,000 companies that have a combined valuation of over $800B.</p><p>To find jobs at these startups, visit <a href="https://www.ycombinator.com/jobs">Work at a Startup</a>.</p></div></section><section class="relative isolate z-0 border-retro-sectionBorder sm:pr-[13px] ycdcPlus:pr-0 border-b pt-6 lg:pt-9 pb-6 lg:pb-9 ycdc-with-link-color"><div class="space-y-2"><div class="flex justify-end"><div class="flex space-x-2"><label class="mb-auto mt-auto whitespace-nowrap">Sort by</label><select class="w-full rounded-md border-gray-300 pl-3 pr-10 pr-6 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"><option value="YCCompany_production">Default</option><option value="YCCompany_By_Launch_Date_production">Launch Date</option></select></div></div><div class="_sharedDirectory_i9oky_76 "><div class="_leftCol_i9oky_131"><div class="_section_i9oky_163 _facets_i9oky_216"><div class="_facet_i9oky_85"><label><input type="checkbox"><span class="_label_i9oky_241">💎 Top Companies</span></label></div><div class="_facet_i9oky_85"><label><input type="checkbox"><span class="_label_i9oky_241">Is Hiring</span><span class="_count_i9oky_307">27</span></label></div><div class="_facet_i9oky_85"><label><input type="checkbox"><span class="_label_i9oky_241">Nonprofit</span></label></div><div class="_line_i9oky_231"></div><div class="_facet_i9oky_85"><h4>Batch </h4><div class="_collapseToggle_i9oky_273"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="square-minus" class="svg-inline--fa fa-square-minus " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm88 200H296c13.3 0 24 10.7 24 24s-10.7 24-24 24H152c-13.3 0-24-10.7-24-24s10.7-24 24-24z"></path></svg></div><label><input type="checkbox" checked=""><span class="_label_i9oky_241">All batches</span><span class="_count_i9oky_307">5284</span></label><div><label><input type="checkbox"><span class="_label_i9oky_241">Summer 2025</span><span class="_count_i9oky_307">48</span></label></div><div><label><input type="checkbox" checked=""><span class="_label_i9oky_241">Spring 2025</span><span class="_count_i9oky_307">143</span></label></div><div><label><input type="checkbox"><span class="_label_i9oky_241">Winter 2025</span><span class="_count_i9oky_307">164</span></label></div><div><label><input type="checkbox"><span class="_label_i9oky_241">Fall 2024</span><span class="_count_i9oky_307">95</span></label></div><div><label><input type="checkbox"><span class="_label_i9oky_241">Summer 2024</span><span class="_count_i9oky_307">252</span></label></div><div><label><input type="checkbox"><span class="_label_i9oky_241">Winter 2024</span><span class="_count_i9oky_307">252</span></label></div><div><label><input type="checkbox"><span class="_label_i9oky_241">Summer 2023</span><span class="_count_i9oky_307">219</span></label></div><a href="https://www.ycombinator.com/companies?batch=Spring%202025#" class="_showMoreLess_i9oky_257">See all options</a></div><div class="_line_i9oky_231"></div><div class="_facet_i9oky_85"><h4>Industry </h4><div class="_collapseToggle_i9oky_273"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="square-minus" class="svg-inline--fa fa-square-minus " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm88 200H296c13.3 0 24 10.7 24 24s-10.7 24-24 24H152c-13.3 0-24-10.7-24-24s10.7-24 24-24z"></path></svg></div><label><input type="checkbox" checked=""><span class="_label_i9oky_241">All industries</span><span class="_count_i9oky_307">143</span></label><div><label><input type="checkbox"><button class="_plain_i9oky_125"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-fw _expandFacet_i9oky_319" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"></path></svg></button><span class="_label_i9oky_241">B2B</span><span class="_count_i9oky_307">99</span></label></div><div><label><input type="checkbox"><button class="_plain_i9oky_125"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-fw _expandFacet_i9oky_319" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"></path></svg></button><span class="_label_i9oky_241">Fintech</span><span class="_count_i9oky_307">6</span></label></div><div><label><input type="checkbox"><button class="_plain_i9oky_125"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-fw _expandFacet_i9oky_319" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"></path></svg></button><span class="_label_i9oky_241">Consumer</span><span class="_count_i9oky_307">5</span></label></div><div><label><input type="checkbox"><span class="_label_i9oky_241">Education</span><span class="_count_i9oky_307">3</span></label></div><div><label><input type="checkbox"><button class="_plain_i9oky_125"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-fw _expandFacet_i9oky_319" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"></path></svg></button><span class="_label_i9oky_241">Healthcare</span><span class="_count_i9oky_307">12</span></label></div><div><label><input type="checkbox"><button class="_plain_i9oky_125"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-fw _expandFacet_i9oky_319" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"></path></svg></button><span class="_label_i9oky_241">Real Estate and Construction</span><span class="_count_i9oky_307">1</span></label></div><div><label><input type="checkbox"><button class="_plain_i9oky_125"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-fw _expandFacet_i9oky_319" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"></path></svg></button><span class="_label_i9oky_241">Industrials</span><span class="_count_i9oky_307">15</span></label></div><a href="https://www.ycombinator.com/companies?batch=Spring%202025#" class="_showMoreLess_i9oky_257">See all options</a></div><div class="_line_i9oky_231"></div><div class="_facet_i9oky_85"><h4>Region </h4><div class="_collapseToggle_i9oky_273"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="square-minus" class="svg-inline--fa fa-square-minus " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm88 200H296c13.3 0 24 10.7 24 24s-10.7 24-24 24H152c-13.3 0-24-10.7-24-24s10.7-24 24-24z"></path></svg></div><label><input type="checkbox" checked=""><span class="_label_i9oky_241">Anywhere</span><span class="_count_i9oky_307">143</span></label><div><label><input type="checkbox"><button class="_plain_i9oky_125"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-fw _expandFacet_i9oky_319" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"></path></svg></button><span class="_label_i9oky_241">America / Canada</span><span class="_count_i9oky_307">97</span></label></div><div><label><input type="checkbox"><button class="_plain_i9oky_125"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-fw _expandFacet_i9oky_319" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"></path></svg></button><span class="_label_i9oky_241">Remote</span><span class="_count_i9oky_307">17</span></label></div><div><label><input type="checkbox"><button class="_plain_i9oky_125"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-fw _expandFacet_i9oky_319" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"></path></svg></button><span class="_label_i9oky_241">Europe</span><span class="_count_i9oky_307">5</span></label></div><div><label><input type="checkbox"><button class="_plain_i9oky_125"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-fw _expandFacet_i9oky_319" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"></path></svg></button><span class="_label_i9oky_241">South Asia</span></label></div><div><label><input type="checkbox"><button class="_plain_i9oky_125"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-fw _expandFacet_i9oky_319" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"></path></svg></button><span class="_label_i9oky_241">Latin America</span></label></div><div><label><input type="checkbox"><button class="_plain_i9oky_125"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-fw _expandFacet_i9oky_319" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"></path></svg></button><span class="_label_i9oky_241">Southeast Asia</span></label></div><div><label><input type="checkbox"><button class="_plain_i9oky_125"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-fw _expandFacet_i9oky_319" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"></path></svg></button><span class="_label_i9oky_241">Africa</span></label></div><div><label><input type="checkbox"><button class="_plain_i9oky_125"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-fw _expandFacet_i9oky_319" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"></path></svg></button><span class="_label_i9oky_241">Middle East and North Africa</span></label></div><div><label><input type="checkbox"><button class="_plain_i9oky_125"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-fw _expandFacet_i9oky_319" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"></path></svg></button><span class="_label_i9oky_241">East Asia</span></label></div><div><label><input type="checkbox"><button class="_plain_i9oky_125"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-fw _expandFacet_i9oky_319" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M246.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-9.2-9.2-22.9-11.9-34.9-6.9s-19.8 16.6-19.8 29.6l0 256c0 12.9 7.8 24.6 19.8 29.6s25.7 2.2 34.9-6.9l128-128z"></path></svg></button><span class="_label_i9oky_241">Oceania</span></label></div></div><div class="_line_i9oky_231"></div><div class="_facet_i9oky_85 "><h4>Company Size </h4><span class="_label_i9oky_241">1 - 1,000+</span><div class="_noUiHorizontal_i9oky_85 noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(0%, 0px) scale(1, 1);"></div></div><div class="noUi-origin" style="transform: translate(-1000%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="8.0" aria-valuenow="0.0" aria-valuetext="1"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(0%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="8.0" aria-valuenow="8.0" aria-valuetext="1,000+"><div class="noUi-touch-area"></div></div></div></div></div><div style="height: 3px;"></div></div><div class="_line_i9oky_231"></div><div class="_facet_i9oky_85"><label><input type="checkbox"><span class="_label_i9oky_241">Public Application Video</span></label></div><div class="_facet_i9oky_85"><label><input type="checkbox"><span class="_label_i9oky_241">Public Demo Day Video</span><span class="_count_i9oky_307">1</span></label></div><div class="_facet_i9oky_85"><label><input type="checkbox"><span class="_label_i9oky_241">Has Application Answers</span></label></div><div class="_facet_i9oky_85"><label><input type="checkbox"><span class="_label_i9oky_241">Has Bonus Questions</span><span class="_count_i9oky_307">5</span></label></div><div class="_showResults_i9oky_169"><button>Show 143 companies</button></div></div></div><div class="_rightCol_i9oky_592"><div class="_section_i9oky_163 _searchBox_i9oky_202"><input type="text" placeholder="Search..." class="" value=""><div class="_activeFacets_i9oky_327"><span class="_activeFacet_i9oky_327"><span>Spring 2025</span><button class="_plain_i9oky_125">✕</button></span></div></div><div class="_showFilters_i9oky_166"><button>Filter</button></div><div class="_message_i9oky_559">Showing 40 of 143 companies</div><div class="_section_i9oky_163 _results_i9oky_343"><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/cohesive"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/523af60648199cf36ae9d89c5bc46aa1a1dd11e5.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Cohesive</span><span class="_coLocation_i9oky_486">New York, NY, USA</span></div><div class="mb-1.5 text-sm"><span>The agentic CRM for blue-collar services</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/docket"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/aa849f70a991d46ed789deab2ddee170d952bc14.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Docket</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>AI agents for web testing</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Engineering,%20Product%20and%20Design" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Engineering, Product and Design</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/sava"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/ee2e9cd5e80fd86d9eb6531e8aa3154bb61a0585.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">SAVA</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>Autonomous Factories for American Manufacturing</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=Industrials" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Industrials</span></a><a href="https://www.ycombinator.com/companies?industry=Manufacturing%20and%20Robotics" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Manufacturing and Robotics</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/godela"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/fe1589548b774d33ca4f20c5020467a9627f9c13.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Godela</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>AI Physics Engine to replace simulations and prototypes</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Engineering,%20Product%20and%20Design" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Engineering, Product and Design</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/bitpatrol"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/a49803acbbc34d447ce47d0129bde3f02dd6b0ec.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">BitPatrol</span><span class="_coLocation_i9oky_486">New York, NY, USA</span></div><div class="mb-1.5 text-sm"><span>AI-powered code security</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Security" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Security</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/aegis"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/36103b40de751e5ec5889840f60eec43dc493e69.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Aegis</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>AI Agents to win denied health insurance claims.</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=Healthcare" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Healthcare</span></a><a href="https://www.ycombinator.com/companies?industry=Healthcare%20IT" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Healthcare IT</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/cascade-space"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/8b61a9c6976c89879b6647cf5de4a9c135cae19d.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Cascade Space</span><span class="_coLocation_i9oky_486"></span></div><div class="mb-1.5 text-sm"><span>Deep space communications as a service</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=Industrials" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Industrials</span></a><a href="https://www.ycombinator.com/companies?industry=Aviation%20and%20Space" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Aviation and Space</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/bond"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/f4056bd531497eb8c59fcb550011c9196adad6a6.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Bond</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>Building Donna, your AI Chief of Staff</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Productivity" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Productivity</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/blueshoe"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/7ff435e9a8349d20737a53d77d98e6b9ef40d649.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Blueshoe</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>The AI-native legal back office</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Legal" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Legal</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/usesieve"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/459d63741f9af0815baebb98ab6c243158d589c2.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">sieve</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>AI + human review to solve data cleaning - accessible via API or Excel</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Finance%20and%20Accounting" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Finance and Accounting</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/airweave"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/d46327d39d6d471e78471c63b18a9b06c8166938.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Airweave</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>Open-Source Tool That Lets Agents Search Any App</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Infrastructure" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Infrastructure</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/theorem-2"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/4462cecf7e86ccbeaa67750a89b934e1dcf2fa9f.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Theorem</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>Program verification so even your systems engineers can vibecode</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Security" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Security</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/text-ai"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/60879a0f6dde6019410f20e9e28b08cdec162645.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">text.ai</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>AI in your group chats</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=Consumer" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Consumer</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/starsling"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/fae29a98d132c4b435b336dbb5d6cf4a1aaf5de7.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">StarSling</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>Cursor for DevOps</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Engineering,%20Product%20and%20Design" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Engineering, Product and Design</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/wavedash"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/5bc7b2b59a7a325fcdf566d9120353bab8f1fa91.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Wavedash</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>Play the latest games in your browser with no downloads</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=Consumer" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Consumer</span></a><a href="https://www.ycombinator.com/companies?industry=Gaming" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Gaming</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/oncactus"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/2d53a6cf3c8074296831c1a7ec4bd88edbf7e572.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Cactus</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>AI copilot for solopreneurs</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/linewise"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/52b288a75cbc24bbab29ace4752b6453e7db35bf.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">LineWise</span><span class="_coLocation_i9oky_486"></span></div><div class="mb-1.5 text-sm"><span>AI Engineer to troubleshoot manufacturing line issues</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Operations" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Operations</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/code-four"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/484fe167f81b504f3783e0d04f12060ec5bf7d11.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Code Four</span><span class="_coLocation_i9oky_486"></span></div><div class="mb-1.5 text-sm"><span>Modernizing the police workflow.</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=Government" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Government</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/lumari"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/ae796c1f4393a51f059d88307440de874c115900.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Lumari</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>Agentic internal tools</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Sales" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Sales</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/mlop"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/3af9294b241ac810c538d00aea0a921d1229099f.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">mlop</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>Experiment tracking for training ML models</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/den"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/b76569fbe505e2260c81baabe36a7512daf19506.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Den</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>Cursor for knowledge workers</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Productivity" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Productivity</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/propolis"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/de349c84edec8a91fa36f8307a0a2b1fa56b010f.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Propolis</span><span class="_coLocation_i9oky_486"></span></div><div class="mb-1.5 text-sm"><span>Hands off QA via intelligent browser agents. </span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/cotool"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/206decabd9d62821656d84ac331ecdfb83854063.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Cotool</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>AI Agents for Security Operations Teams</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Security" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Security</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/delty"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/9a497a3dd8d97bd1afd47deddea2d641ad655b69.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Delty</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>AI staff engineer: software architect that leads coding agents</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Engineering,%20Product%20and%20Design" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Engineering, Product and Design</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/nimbic-ai"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/e2f73769cf099429cf35b159e89f9f7c89a94c78.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Nimbic AI</span><span class="_coLocation_i9oky_486"></span></div><div class="mb-1.5 text-sm"><span>Automatically write and update internal docs with every code commit.</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Engineering,%20Product%20and%20Design" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Engineering, Product and Design</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/moby-analytics"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/2113434e52531a77ccec1fd7bb7d5596dc0b6f6d.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Moby Analytics</span><span class="_coLocation_i9oky_486">Paris, Île-de-France, France</span></div><div class="mb-1.5 text-sm"><span>AI financial auditors</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Finance%20and%20Accounting" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Finance and Accounting</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/rimba"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/b68af887ba539134268ac073e1a367094447c416.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Rimba</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>AI to replace manual work in environmental compliance reporting</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=Industrials" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Industrials</span></a><a href="https://www.ycombinator.com/companies?industry=Climate" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Climate</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/workdone"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/924734540288bf8cd89e4e3406e3bc65fd236248.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">WorkDone</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>Real-time AI Compliance for Medical Documentation</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=Healthcare" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Healthcare</span></a><a href="https://www.ycombinator.com/companies?industry=Healthcare%20IT" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Healthcare IT</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/probo"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/c0e14dfc874747053fa6732daf6dbf9f9ed3e18d.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Probo</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>We help you get compliant while you focus on your business.</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Security" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Security</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/mindfort"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/67f8fa73a583138ab0060e99d6a10e8341a0d040.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">MindFort</span><span class="_coLocation_i9oky_486"></span></div><div class="mb-1.5 text-sm"><span>Autonomous Security Agents</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Security" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Security</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/chrt"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/e0bd87983ace16e9a440ec6fe901ff569c1bb997.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">chrt</span><span class="_coLocation_i9oky_486"></span></div><div class="mb-1.5 text-sm"><span>chrt is a logistics platform for time-critical shipping</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Supply%20Chain%20and%20Logistics" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Supply Chain and Logistics</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/lapel"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/43b4720ee8b1c90bf120b33611e6eebe044cd993.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Lapel</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>Scale personalized service to every customer.</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/mesmer"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/6139ccbb34b49d774e2708fc51e7b70f16db36d5.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Mesmer</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>Cursor for CTOs</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Engineering,%20Product%20and%20Design" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Engineering, Product and Design</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/relixir"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/bdcf73573dccf318ed1596f35ee2d75c694aefda.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Relixir</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>Content Automation for AI Search Visibility</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/janus"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/3b44f7b050ecc3ee1451baeb4e0a733b19937955.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Janus</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>Battle-Test AI Agents with Human Simulation</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Infrastructure" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Infrastructure</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/hemut"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/0130d4e41d286011dbbf71e01781948525f98d90.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Hemut</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>AI-powered operating system for trucking companies.</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Supply%20Chain%20and%20Logistics" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Supply Chain and Logistics</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/zero"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/0a6f23712cebc8751d7d54d0dda9e0fefd595ba2.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Zero</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>AI powered email client that manages your email so you don't have to.</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a><a href="https://www.ycombinator.com/companies?industry=Productivity" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Productivity</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/valuemate"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/2513957c2cb96d4cf73c23653ae7fb3d644aabb1.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">ValueMate</span><span class="_coLocation_i9oky_486">San Francisco, CA, USA</span></div><div class="mb-1.5 text-sm"><span>Valuemate automates real estate appraisals with AI </span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=B2B" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">B2B</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/bramante-biologics"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/bf074dabb28f6a317b41850f4ce802050e1e38af.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Bramante Biologics</span><span class="_coLocation_i9oky_486">Cambridge, MA, USA</span></div><div class="mb-1.5 text-sm"><span>American drug manufacturing</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=Healthcare" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Healthcare</span></a></div></div></div></div></a><a class="!py-4 _company_i9oky_355" href="https://www.ycombinator.com/companies/scalar-field"><div class="relative flex w-full items-center justify-start"><div class="flex w-20 shrink-0 grow-0 basis-20 items-center pr-4"><img src="./The YC Startup Directory _ Y Combinator_files/7b28fd1bee5f680014678e8985405788a687849f.png" alt="" role="presentation" class="rounded-full bg-gray-100"></div><div class="flex flex-1 items-center justify-between"><div class="lg:max-w-[90%]"><div class="my-0 py-0"><span class="_coName_i9oky_470">Scalar Field</span><span class="_coLocation_i9oky_486"></span></div><div class="mb-1.5 text-sm"><span>Reinventing the trading terminal — one intelligent agent at a time.</span></div><div class="_pillWrapper_i9oky_33"><a href="https://www.ycombinator.com/companies?batch=Spring%202025" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 "><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="y-combinator" class="svg-inline--fa fa-y-combinator fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 32v448H0V32h448zM236 287.5L313.5 142h-32.7L235 233c-4.7 9.3-9 18.3-12.8 26.8L210 233l-45.2-91h-35l76.7 143.8v94.5H236v-92.8z"></path></svg>Spring 2025</span></a><a href="https://www.ycombinator.com/companies?industry=Fintech" target="_blank" class="_tagLink_i9oky_1040"><span class="pill _pill_i9oky_33 ">Fintech</span></a></div></div></div></div></a></div><div class="my-4 flex w-full flex-row items-center justify-center gap-x-2 text-center text-lg"><svg aria-hidden="true" class="mx-2 h-8 w-8 animate-spin fill-blue-600 text-gray-200 undefined" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"></path><path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"></path></svg>Loading more...</div></div></div></div></section></div><footer aria-labelledby="footer-heading"><h2 id="footer-heading" class="sr-only">Footer</h2><div class="mx-auto max-w-ycdc-page py-12 lg:py-16"><div class="flex flex-col space-y-8 md:flex-row md:space-y-0"><div class="md:pr-16"><a class="block h-[45px] w-[45px] sm:h-[60px] sm:w-[60px]" href="https://www.ycombinator.com/" title="Y Combinator"><span class="sr-only">Y Combinator</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQEAAAEBCAMAAABPMuDPAAAAQlBMVEXyZSLyZSLyZSLyZSLyZSL6roH91br2ilD+6tr4nGn0eDf7wp3+9e3zbyz3k1z0gUP7uI/5pXX+38n8y6z////yZSKuMvVfAAAABXRSTlOAQMBgICelMzEAAAOgSURBVHhe5MABDQAAAIIw3eifmSB8vA3Zt5vcuGEgCsLeUBSpnxnb4f2vmn068xK5Z8FuFQ8gCB9q80Dw42Pc+3y8UQABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQACBR7GnuAF6MafNKnDsv+xx/+1mv3nOKjDKXwRWbwIWYJl4F6wigvclUCcWaCKCeRKwAtNFoBN4TC1wigjelMA2+S5YRATv+VyfXKC+NYIqEphVQEfgT2Dv0ws8VAT+BEqAXbCJCPwJHAEEuorAn0AAARGBO4H1CCFw7O+JoArIuQVGERH4EhgBBFQE/gQmF9ARnP4EljG5gB5Iiz+BGkBAreTqTyCAgIzAnUAogdMbwSIm0cQCeiAtvgR6MIEqInAkEEBARuBKIJzAwxOB5SsBb822n0dQxSoOJNBFBI4EAgmMp4jAkUAAATWQ6s8SaEFvz8vPIqhiWAYQcEQgEogqMD5FBBcS+BrBBPRAqtcTqIEF2vUIqsgmgIAjApFAaIF6NQKbwPcIKKAHUr2WQI8k4I+gilUcQMARgUggvEC/EkEzAM8E7wu2CxGsdhJFEvBH0MQqDiegV3J1JBBQ4NhFBDqBzyTvC4qIQCawjgwCOgKdQIstoFdydSQQRcD2rSNoVimRQPuPCFaLFF1AR7A5EggloK/BdAIZBPRVqE6ghxLwR7BaoBQCOgKdQDqBLiIQCSQSGJuIoNlJlEVAR3C8TKCkfHX7fLn+T5tASoFjf9X6YmlSCozyYvxVO4kSCegI1r8n0FIJ6IF0igQyCej9txiWZAI6gsfoViWxwPiy+2gzqzi1QLUR2ATSCeiBtBuSfAI6AjsWkguM738I9PQC3ZFADoGxKYC95xfQEZRxA4FRRALHLQSOXSSQXkBHsB75BXQEbWQV0APJruL8AmMVCaQW0BEsI5uAXsn21FsJVJFAZgH9juJmAsVOorsLlLsJIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAm3547QAAoGPFkAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBH6XAwc0AAAAAME2+ncWxOXNAI6Cs14i3Db7AAAAAElFTkSuQmCC" class="h-full w-full" alt="Y Combinator" width="60" height="60"></a></div><div class="flex flex-col space-y-8 sm:flex-row sm:space-x-16 sm:space-y-0 md:justify-items-center"><div><h3 class="font-semibold tracking-wider">Programs</h3><ul class="mt-2 space-y-1"><li><a href="https://www.ycombinator.com/about" class="font-light text-sm text-inherit">YC Program</a></li><li><a href="https://startupschool.org/" class="font-light text-sm text-inherit">Startup School</a></li><li><a href="https://www.ycombinator.com/jobs" class="font-light text-sm text-inherit">Work at a Startup</a></li><li><a href="https://www.ycombinator.com/cofounder-matching" class="font-light text-sm text-inherit">Co-Founder Matching</a></li></ul></div><div><h3 class="font-semibold tracking-wider">Company</h3><ul class="mt-2 space-y-1"><li><a href="https://www.ycombinator.com/blog" class="font-light text-sm text-inherit">YC Blog</a></li><li><a href="https://www.ycombinator.com/contact" class="font-light text-sm text-inherit">Contact</a></li><li><a href="https://www.ycombinator.com/press" class="font-light text-sm text-inherit">Press</a></li><li><a href="https://www.ycombinator.com/people" class="font-light text-sm text-inherit">People</a></li><li><a href="https://www.ycombinator.com/careers" class="font-light text-sm text-inherit">Careers</a></li><li><a href="https://www.ycombinator.com/legal#privacy" class="font-light text-sm text-inherit">Privacy Policy</a></li><li><a href="https://www.ycombinator.com/legal#notice-at-collection" class="font-light text-sm text-inherit">Notice at Collection</a></li><li><a href="https://www.ycombinator.com/security" class="font-light text-sm text-inherit">Security</a></li><li><a href="https://www.ycombinator.com/legal#tou" class="font-light text-sm text-inherit">Terms of Use</a></li></ul></div><div><h3 class="font-semibold tracking-wider">Resources</h3><ul class="mt-2 space-y-1"><li><a href="https://www.ycombinator.com/companies" class="font-light text-sm text-inherit">Startup Directory</a></li><li><a href="https://www.ycombinator.com/library" class="font-light text-sm text-inherit">Startup Library</a></li><li><a href="https://www.ycombinator.com/investors" class="font-light text-sm text-inherit">Investors</a></li><li><a href="https://www.ycombinator.com/documents" class="font-light text-sm text-inherit">SAFE</a></li><li><a href="https://news.ycombinator.com/" class="font-light text-sm text-inherit">Hacker News</a></li><li><a href="https://www.ycombinator.com/launches" class="font-light text-sm text-inherit">Launch YC</a></li><li><a href="https://deals.ycombinator.com/" class="font-light text-sm text-inherit">YC Deals</a></li></ul></div></div><div class="mt-8 flex-1 space-x-2 sm:text-right md:mt-0"><h3 class="inline-block text-[1.17em] md:hidden lg:inline-block ycdcPlus:mr-0">Make something people want.</h3><a href="https://www.ycombinator.com/apply" class="apply-btn ycdc-retro-btn ml-[13px] mt-[-10px] bg-brand hover:bg-[#ee5d19]">Apply</a></div></div><div class="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between"><div class="flex space-x-6 md:order-2"><a href="https://twitter.com/ycombinator" target="_blank" class=""><span class="sr-only">Twitter</span><svg fill="currentColor" viewBox="0 0 24 24" width="1.25em" height="1.25em" class="h-6 w-6" aria-hidden="true"><title>Twitter</title><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg></a><a href="https://www.facebook.com/YCombinator/" target="_blank" class=""><span class="sr-only">Facebook</span><svg fill="currentColor" viewBox="0 0 24 24" width="1.25em" height="1.25em" class="h-6 w-6" aria-hidden="true"><title>Facebook</title><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg></a><a href="https://www.instagram.com/ycombinator" target="_blank" class=""><span class="sr-only">Instagram</span><svg fill="currentColor" viewBox="0 0 24 24" width="1.25em" height="1.25em" class="h-6 w-6" aria-hidden="true"><title>Instagram</title><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path></svg></a><a href="https://www.linkedin.com/school/y-combinator/" target="_blank" class=""><span class="sr-only">LinkedIn</span><svg fill="currentColor" viewBox="0 0 24 24" width="1.25em" height="1.25em" class="h-6 w-6" aria-hidden="true"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a><a href="https://www.youtube.com/c/ycombinator" target="_blank" class=""><span class="sr-only">Youtube</span><svg fill="currentColor" viewBox="0 0 24 24" width="1.25em" height="1.25em" class="h-6 w-6" aria-hidden="true"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg></a></div><p class="mt-8 text-base md:order-1 md:mt-0">© 2025 Y Combinator</p></div></div></footer></div><script src="./The YC Startup Directory _ Y Combinator_files/event-logging-firOEUfJ.js" crossorigin="anonymous" type="module"></script><link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/authorizedFetch-DYO9WpPs.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-CRdwx0oD.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/csrf-DWyi7aX-.js" as="script" crossorigin="anonymous"></body></html>
