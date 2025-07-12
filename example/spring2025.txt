@@ -1,0 +1,1121 @@
+Y Combinator Companies (143 companies)
+=====================================
+
+1. Cohesive
+Title: The agentic CRM for blue-collar services
+Description: Cohesive is the agentic CRM for blue collar businesses like janitorial, pressure washing, landscaping, HVAC, and pest control businesses. Cohesive fully automates sales and marketing outreach to local businesses and property owners in the service area, helping local service businesses grow even while servicing clients in the field.
+URL: https://www.ycombinator.com/companies/cohesive
+
+2. Docket
+Title: AI agents for web testing
+Description: Docket lets you write end-to-end tests in plain English and keeps them up to date automatically—powered by real user sessions.
+URL: https://www.ycombinator.com/companies/docket
+
+3. SAVA
+Title: Autonomous Factories for American Manufacturing
+Description: SAVA is rebuilding sheet metal manufacturing from the ground up. From Ford Trucks to NASA Space Shuttles, sheet metal is the cornerstone of American Manufacturing - but the industry runs on 30-year-old technology and a shrinking workforce.
+
+Alessio and Vedic competed in high school robotics when they met Jakob at Georgia Tech's Robotics labs. After witnessing Vedic's father's 12-hour shifts and visiting manufacturers across the US, they saw an industry trapped by legacy constraints: manual processes, skilled labor shortages, and unused automation.
+
+SAVA is building a fully integrated manufacturing system that eliminates skilled operators while delivering superior speed, quality, and economics. They're already reducing customer iteration cycles from 5-6 days to 1-2 days for companies like Pave Robotics - proving the technology works in real production environments.
+
+They're not just replacing human operators with robots - they're building the foundation to replace an entire industry built on outdated technology with modern manufacturing intelligence.
+URL: https://www.ycombinator.com/companies/sava
+
+4. Godela
+Title: AI Physics Engine to replace simulations and prototypes
+Description: What if every experiment you wanted to run could be modeled using AI? 
+Godela is an AI-powered physics engine that gives engineers faster, cheaper replacement to simulations and physical prototypes.
+No set up, no wait. Just ask—and get simulation quality result.
+URL: https://www.ycombinator.com/companies/godela
+
+5. BitPatrol
+Title: AI-powered code security
+Description: Leverage cutting-edge AI to detect exposed credentials in real time and protect your organization from high-impact data breaches.
+URL: https://www.ycombinator.com/companies/bitpatrol
+
+6. Aegis
+Title: AI Agents to win denied health insurance claims.
+Description: Aegis is the all-in-one platform that helps healthcare providers recover lost revenue by automating insurance denial appeals—from intake to resolution. Built for billing teams, healthcare providers and hospitals.
+URL: https://www.ycombinator.com/companies/aegis
+
+7. Cascade Space
+Title: Deep space communications as a service
+Description: Cascade Space is building a turn-key communications system for lunar and deep space missions. Our ground station network and integrated software tools work together to maximize uptime and availability, while reducing spacecraft iteration cycles from weeks to hours.
+URL: https://www.ycombinator.com/companies/cascade-space
+
+8. Bond
+Title: Building Donna, your AI Chief of Staff
+Description: Our AI Chief of Staff gives CEOs and busy executives instant visibility into project progress, team performance and key company metrics. Eliminating status updates and saving execs 10+ hours a week.
+URL: https://www.ycombinator.com/companies/bond
+
+9. Blueshoe
+Title: The AI-native legal back office
+Description: Blueshoe's AI workers put law firm back office operations on autopilot starting with automated, end-to-end invoice-to-cash. At any given moment, U.S. law firms have $100B+ of revenue trapped in slow, manual and error-prone decisions and document workflows. Meanwhile, clients and practices are both innovating on dynamic revenue models beyond the billable hour. Blueshoe is building the next-gen, AI-enabled managed service for professional practices that's reliable, transparent and free of human bottlenecks.
+URL: https://www.ycombinator.com/companies/blueshoe
+
+10. sieve
+Title: AI + human review to solve data cleaning - accessible via API or Excel
+Description: We’re building the AI trust layer. Companies in higher-risk industries want to use AI but can't yet trust it. We verify the AI outputs before they reach the user, so they can be used in industries like finance and medicine. Right now that's using humans, but in the future we'll offer AI-based verification solutions.
+
+Businesses complain that AI alone falls short of their accuracy requirements. They end up needing to check AI outputs against source documents to confirm accuracy. We solve this last mile problem by integrating expert reviewers to catch and correct the issues that AI alone doesn't get right.
+URL: https://www.ycombinator.com/companies/usesieve
+
+11. Airweave
+Title: Open-Source Tool That Lets Agents Search Any App
+Description: Airweave is an open-source tool that lets agents search any app. It connects to productivity tools, databases, or document stores and transforms their contents into searchable knowledge bases for agents.
+URL: https://www.ycombinator.com/companies/airweave
+
+12. Theorem
+Title: Program verification so even your systems engineers can vibecode
+Description: Theorem is training models that make program verification 10,000 times faster. Using verification as a feedback loop, developers have found zero-days in GPU accelerated code and cryptography implementations, and sped up code migration in legacy systems. If you have complicated code that needs to be correct and secure, sign up for our beta!
+URL: https://www.ycombinator.com/companies/theorem-2
+
+13. text.ai
+Title: AI in your group chats
+Description: You can now text AI in your existing chats. No downloads needed. 
+
+We've brought AI directly into SMS, WhatsApp, and Telegram which over 5.5 billion people use daily.
+
+No learning curve, just text and go.
+
+Discover local eats. 
+Plan group events. 
+Roast friends. 
+
+Together with AI.
+URL: https://www.ycombinator.com/companies/text-ai
+
+14. StarSling
+Title: Cursor for DevOps
+Description: StarSling is building an agentic developer homepage that automates all the tasks that eat up a developer’s time after they’ve left their code editor: deployments, performance, incidents, and bugs. Open your homepage, click on a GitHub, Linear, or Sentry issue and you’ll see an Autofix button that triggers an AI agent and opens up a Pull Request with a fix, all without leaving your homepage.
+URL: https://www.ycombinator.com/companies/starsling
+
+15. Wavedash
+Title: Play the latest games in your browser with no downloads
+Description: Wavedash uses cutting edge browser technology to let gamers play the latest releases with no downloads or installation.
+URL: https://www.ycombinator.com/companies/wavedash
+
+16. Cactus
+Title: AI copilot for solopreneurs
+Description: We're building an AI copilot for solopreneurs to automate their admin work. Our AI answers the phone, qualifies customers, and books in revenue. We see a future where solopreneurs will fully vibe code and run their entire business on Cactus.
+URL: https://www.ycombinator.com/companies/oncactus
+
+17. LineWise
+Title: AI Engineer to troubleshoot manufacturing line issues
+Description: LineWise is building an AI assistant for manufacturing teams to get their line back up and running.
+
+When a line goes down, it can take hours to identify the problem. Engineers and technicians scramble, chasing PLC data and logs, flipping through manuals and troubleshooting guides, while production stalls.
+
+LineWise connects siloed data from PLCs, maintenance logs, and machine manuals to triage potential causes for the issue at hand. Once the issue is resolved, LineWise will remember everything for the next time and advocate preventative actions.
+URL: https://www.ycombinator.com/companies/linewise
+
+18. Code Four
+Title: Modernizing the police workflow.
+Description: Code Four slashes the administrative burden on law enforcement through AI-driven automation. Officers spend up to a third of their shifts manually transcribing body camera footage, creating inaccuracies, reducing transparency, and cutting into frontline duties. We're here to eliminate these inefficiencies by integrating with body cameras, record management systems, and digital evidence management systems—acting as a software layer for data processing. 
+
+We free the most overworked and underappreciated people in the world: police officers.
+URL: https://www.ycombinator.com/companies/code-four
+
+19. Lumari
+Title: Agentic internal tools
+Description: Lumari enables non-technical GTM teams to create custom internal apps and agentic workers without writing any code. 
+Simply describe what you want, and we'll generate and deploy fully integrated, secure apps in minutes.
+URL: https://www.ycombinator.com/companies/lumari
+
+20. mlop
+Title: Experiment tracking for training ML models
+Description: A fully open-source, performant and actionable Weights & Biases alternative that saves you money. 
+
+Check out our story here! https://www.reddit.com/r/mlopai/comments/1kkc9jp/mlopai_an_efficient_free_and_opensource/
+URL: https://www.ycombinator.com/companies/mlop
+
+21. Den
+Title: Cursor for knowledge workers
+Description: Den is a Slack/Notion-like platform that help teams get more done with general-purpose AI agents. 
+
+We want to deploy trillions of AI agents into the mainstream workforce and unlock the most productive era in human history.
+URL: https://www.ycombinator.com/companies/den
+
+22. Propolis
+Title: Hands off QA via intelligent browser agents.
+Description: Propolis simulates real users via swarms of autonomous browser agents that test for you.
+URL: https://www.ycombinator.com/companies/propolis
+
+23. Cotool
+Title: AI Agents for Security Operations Teams
+Description: Cotool is an agentic security platform that eliminates manual and repetitive work for security teams.
+
+Today’s cybersecurity teams remain bogged down by alert fatigue, context switching, and documentation overhead. Security teams don't need more dashboards with "AI-powered insights" — they need their time back.
+
+Cotool empowers teams to build security their way. Our platform provides an AI co-pilot that automatically assembles context across tools, a no-code agent builder that transforms successful investigations into reusable automations, and automated report generation, providing comprehensive documentation in seconds.
+
+Unlike solutions that force teams to adapt to vendor workflows, Cotool puts the power of AI directly in practitioners' hands, letting them shape tools around their unique processes. Early users have already cut time spent on investigation and detection engineering by 70%.
+URL: https://www.ycombinator.com/companies/cotool
+
+24. Delty
+Title: AI staff engineer: software architect that leads coding agents
+Description: As software systems grow more complex and teams scale, key engineering work happens outside of code: product specs, docs, and architecture decisions and norms. That’s where a staff software engineer shines.
+
+Delty is an AI staff engineer.
+
+Like a seasoned engineer embedded in your team, Delty understands your architecture, code evolution, and constraints. It designs new software systems and grounds your coding agents with real engineering context to help you deliver reliable, scalable systems, fast.
+URL: https://www.ycombinator.com/companies/delty
+
+25. Nimbic AI
+Title: Automatically write and update internal docs with every code commit.
+Description: 
+URL: https://www.ycombinator.com/companies/nimbic-ai
+
+26. Moby Analytics
+Title: AI financial auditors
+Description: At Moby Analytics, we provide the first AI agentic platform built for financial auditors. Auditors easily create and deploy AI agents to automate audit workflows. No code, just prompts and domain expertise.
+URL: https://www.ycombinator.com/companies/moby-analytics
+
+27. Rimba
+Title: AI to replace manual work in environmental compliance reporting
+Description: Rimba is building an AI-powered platform to help industrial and energy companies stay compliant with environmental regulations.
+
+Legacy systems can’t keep up with today’s complex compliance needs. Rimba offers a platform that integrates data from various software systems—like ERPs, SCADA, Sharepoint—to monitor, report, and verify emissions and other environmental data. Rimba has the capability to parse through PDFs and time-series data at scale while having an AI that continuously learns and predicts outcomes.
+URL: https://www.ycombinator.com/companies/rimba
+
+28. WorkDone
+Title: Real-time AI Compliance for Medical Documentation
+Description: WorkDone is an AI compliance copilot for hospitals and clinics. We are like Grammarly for doctors, finding and fixing mistakes that lead to denied insurance claims or patient lawsuits. The industry today spends $40B doing this manually.
+URL: https://www.ycombinator.com/companies/workdone
+
+29. Probo
+Title: We help you get compliant while you focus on your business.
+Description: Probo acts like your compliance team. You tell us how you work, and Probo does the rest:
+1. Set the right requirements - not overkill
+2. Handle docs, risks, controls, evidence
+3. Run the audit
+4. Keep everything up to date afterward
+Founders shouldn’t lose weeks to this stuff. Even one day is too much.
+URL: https://www.ycombinator.com/companies/probo
+
+30. MindFort
+Title: Autonomous Security Agents
+Description: MindFort is building fully autonomous AI agents powered by their in-house models that can find, exploit, and patch complex vulnerabilities in web applications at massive scale. MindFort agents use the same principles as human penetration testers to understand their target and figure out the best ways to work together to exploit it.
+
+While security teams were already behind with legacy tools and processes, AI coding is make the problem worse. AI generates code far faster than human teams can secure it; MindFort can match that speed and scale. Our agents will become critical as organizations scale up development with AI.
+URL: https://www.ycombinator.com/companies/mindfort
+
+31. chrt
+Title: chrt is a logistics platform for time-critical shipping
+Description: chrt is a logistics platform for time-critical shipping. We enable businesses to deliver their most critical items same-day.
+
+Time-Critical Logistics is a $30B market growing at a 20% CAGR driven by growth in American healthcare and manufacturing.
+
+Businesses that place time-critical orders are enterprises who have urgent items they need to deliver ASAP. These orders are critical in nature and often require white glove service -- think therapeutic treatments for healthcare providers or specialized equipment for manufacturers. 
+
+chrt provides a marketplace of professional couriers who pick up and deliver these orders. We build the software these couriers use to handle the shipments, including a driver app and fleet management tools. This gives us full control of the shipment and allows us to provide shippers with end-to-end tracking. It also allows us to intervene early if we notice something is going wrong.
+
+We’re software engineers that became friends years ago at McKinsey. Kyle is an expert in Time-Critical Logistics, having led strategy at a leading startup in the space. Aaron is an expert at designing and implementing AI systems to handle complex coordination. We were shipping code together on nights and weekends for years before chrt; now we’re also shipping freight.
+URL: https://www.ycombinator.com/companies/chrt
+
+32. Lapel
+Title: Scale personalized service to every customer.
+Description: Lapel is building a customer operations platform that brings hospitality to the internet: tools to power every touchpoint across sales, success, and support.
+
+Today, most teams manage relationships through dashboards, funnels, and canned replies—great for metrics, terrible for humans. We believe online customer relationships should feel personal, not transactional.
+
+Learn more at lapel.com
+URL: https://www.ycombinator.com/companies/lapel
+
+33. Mesmer
+Title: Cursor for CTOs
+Description: Mesmer is Cursor for CTOs. We give founders and CTOs full visibility into their org without drowning in meetings or chasing updates. We are a team of repeat founders and CTOs with 15+ years of experience each, including leading product development togehter at Origin Financial, a fintech started by Mesmer's CEO, as it scaled to 8-figure ARR, 100+ employees and a $400M valuation. Mesmer reached 6-figure ARR within a week of launching and is already live with companies worth over $8B, including Webflow and Origin Financial.
+URL: https://www.ycombinator.com/companies/mesmer
+
+34. Relixir
+Title: Content Automation for AI Search Visibility
+Description: Relixir is the content automation platform for AI search visibility.
+
+For the first time in 20 years, google search has dipped below a 90% market share. This is because people are switching to AI search.
+
+However, old SEO content only works for Google, leaving teams helpless as their customers turn to AI assistants for answers and recommendations that leave them out.
+
+That’s where Relixir comes in to automatically discover, write, and update GEO content that pushes companies to be the answer on ChatGPT, Perplexity, etc.
+URL: https://www.ycombinator.com/companies/relixir
+
+35. Janus
+Title: Battle-Test AI Agents with Human Simulation
+Description: Janus tests conversational AI Agents for hallucinations, rule violations, tool call failures, and performance breakdowns pre-launch. We do this by simulating thousands of realistic AI users to eliminate manual testing and low-confidence in AI deployment.
+
+Our platform generates personalized datasets to evaluate, benchmark, and improve models over time.
+URL: https://www.ycombinator.com/companies/janus
+
+36. Hemut
+Title: AI-powered operating system for trucking companies.
+Description: Next-generation truck management software to automate back-office operations for trucking companies. Features include AI agents to automate inbound/outbound calls, AI document upload to reduce manual data entry, load sourcing tools, automated accounting, and more.
+URL: https://www.ycombinator.com/companies/hemut
+
+37. Zero
+Title: AI powered email client that manages your email so you don't have to.
+Description: Zero empowers knowledge workers by transforming the way they manage their email. It intelligently summarizes important messages, helps complete tasks, and even enables users to chat directly with their inbox.
+URL: https://www.ycombinator.com/companies/zero
+
+38. ValueMate
+Title: Valuemate automates real estate appraisals with AI
+Description: Property appraisals suck — September’s new federal rules will make them even worse.
+
+ValueMate’s LiDAR-plus-AI app captures a property in a three-minute walkthrough and delivers a regulator-ready report on our dashboard, slashing cycle times by 80% for the valuation firms already on board.
+
+In the next few months, every bank, AMC, and independent appraiser must switch to the new format or watch loans pile up. ValueMate handles the transition end-to-end, with zero tape measures, zero data entry, and zero closing delay.
+
+We’re transforming the multi-billion dollar appraisal industry with technology that captures millions of 3D data points per walkthrough.
+URL: https://www.ycombinator.com/companies/valuemate
+
+39. Bramante Biologics
+Title: American drug manufacturing
+Description: Manufacturing pharmaceutical drugs faster and in the USA
+URL: https://www.ycombinator.com/companies/bramante-biologics
+
+40. Scalar Field
+Title: Reinventing the trading terminal — one intelligent agent at a time.
+Description: We’re building an AI-powered Bloomberg Terminal using Financial Agents.
+
+I used to be a trader at Tower Research and Goldman Sachs, and I’m building Scalar Field with my co-founder Ramakant, who led engineering teams at Microsoft.
+
+We’ve both spent our careers at the intersection of finance and technology — and we’re using that experience to reimagine how markets are analyzed and traded.
+
+Scalar Field is built around a simple idea: most people log into a terminal because, consciously or subconsciously, they’re trying to validate a hypothesis.
+
+But today’s terminals don’t help with that. They’re dashboards — not thinking tools.
+
+So we built Scalar Field to change that: a platform where users can test any market hypothesis instantly using intelligent agents.
+
+You can spin up agents that react to market events, run backtests across data from multiple asset classes, and even trigger trades when specific conditions are met — all in one place.
+URL: https://www.ycombinator.com/companies/scalar-field
+
+41. Eloquent AI
+Title: The AI Operator for Financial Services
+Description: We automate complex, regulated operations in financial services—no APIs, no engineering required.
+We hit $500K ARR in just four weeks because customers deploy instantly.
+Our AI Operator learns by observing existing workflows and SOPs, securely controlling browser and desktop applications to automate up to 96% of tasks.
+URL: https://www.ycombinator.com/companies/eloquent-ai
+
+42. MorphoAI
+Title: Software tool for designing robots and machines
+Description: We're building an AI powered platform for engineers that are building new robots and machines. 
+
+We allow users to invent and modify machine designs in a matter of minutes, not years. Ayna and Andy, the co-founders, met during their time at Harvard and started this in 2024 as their programs were wrapping up. We're commercializing 10+ years research done by our team at Harvard and MIT on this space. Our team wrote the very first papers on applying GenAI and optimization algorithms to compose robots from parts and applying computational design to fine tune machine designs. We're bringing in our deep knowledge of modifying equipment and integrating it into factories keenly understanding what makes hardware hard. 
+
+We take in parts under consideration, constraints and tasks at hand and our algorithm formulates and fine tunes from 100s of possible design options. All in a few clicks, so engineers can push hardware to market faster and companies can benefit from the inventions being done by their R&D teams. We already have two paying customers in the OEM and system integrator spaces. 
+
+We are venture backed and supported by a GBP 2.5MM grant by ARIA, the UK Government's invention agency.
+URL: https://www.ycombinator.com/companies/morphoai
+
+43. Vassar Robotics
+Title: Ultra-affordable robots that are practical and accessible today.
+Description: Vassar Robotics builds ultra-affordable robot arms and mobile platforms, teleoperated and powered by cloud-based AI, delivering immediate practical value for homes and small businesses.
+URL: https://www.ycombinator.com/companies/vassar-robotics
+
+44. Boost Robotics
+Title: Robots for the inspection and maintenance of data centers
+Description: Boost Robotics is building autonomous mobile manipulation robots to remotely perform manual tasks in data centers. 
+
+The surge in AI applications is pushing data centers to scale faster than they can manage, leading to suboptimal operations and staffing shortages amid rising power and compute demands.
+
+We save data centers millions in insurance premiums and SLA violations by increasing the frequency of inspection and maintenance while reducing the time it takes to triage and address failures.
+URL: https://www.ycombinator.com/companies/boost-robotics
+
+45. Sygaldry Technologies
+Title: quantum-accelerated AI servers
+Description: We’re building quantum-accelerated AI servers so organizations building AI can exponentially speed up training and inference. And we’re making tools for AI researchers to integrate quantum capabilities into AI models and workflows.
+URL: https://www.ycombinator.com/companies/sygaldry-technologies
+
+46. ParaQuery
+Title: Managed GPU-accelerated Spark + SQL at 2x speed and half the cost
+Description: ParaQuery is a fully-managed GPU-accelerated Spark solution providing double the performance at half the cost compared to solutions like Databricks and BigQuery. It is fully Spark-compatible, cloud agnostic, and has seamless integrations everywhere, all without vendor lock-in. ParaQuery makes it trivial to run large SQL and Spark workloads efficiently and serverlessly, without any data migrations.
+URL: https://www.ycombinator.com/companies/paraquery
+
+47. Klavis AI
+Title: Open Source MCP Integrations for AI Applications
+Description: Klavis AI is open source MCP integrations for AI Applications. Our API provides hosted, secure MCP servers, eliminating auth management and client-side code. Co-founder Xiangkai Zeng co-authored the Gemini paper and pioneered the tool calling infrastructure for Gemini. https://www.klavis.ai/
+URL: https://www.ycombinator.com/companies/klavis-ai
+
+48. Third Chair
+Title: Agents for in-house legal teams
+Description: We’re building agents for in-house legal teams, starting with media/entertainment. Our customers use Third Chair to discover IP infringements, collect evidence, and recover millions of dollars in damages.
+
+We’re both second-time, exited YC founders with deep domain expertise in this market. My last startup sold marketing analytics to Universal Music Group and Mr. Beast. My cofounder Shourya founded a fintech platform and scaled it to 2 million users and tens of millions in transactions. 
+
+AI will enable the first one-person unicorn. Third Chair will be their legal team.
+URL: https://www.ycombinator.com/companies/third-chair
+
+49. Vesence
+Title: Cursor for Lawyers. Agentic AI in MS Office.
+Description: Vesence is building Cursor for Lawyers.
+
+Already rolled out firm-wide with a first major law firm. We launched in February.
+
+Imagine programming in Apple Notes. No linting, no cursor, you are on your own. That is how it is for many lawyers to draft and review contracts in Microsoft Word. We are here to change that.
+URL: https://www.ycombinator.com/companies/vesence
+
+50. PowerMatrix
+Title: Efficient and compact power supply for AI hardware
+Description: PowerMatrix provides the MOST efficient and compact next-generation high-performance power supplies for emerging technologies, such as GPUs, xPUs, AI server, datacenters, drones, EV, aerospace, etc. 
+
+Based on patented circuit topology, embedded packaging, and novel magnetics, our power supply systems can reduce energy loss by up to 50%. 
+
+We have developed several prototypes and are collaborating with world-leading customers.
+URL: https://www.ycombinator.com/companies/powermatrix
+
+51. Jazzberry
+Title: Training LLMs to be expert bug finders
+Description: We're creating an AI agent that orchestrates debugging tools and runs your code to find bugs. It's time to close the loop on vibe coding.
+URL: https://www.ycombinator.com/companies/jazzberry
+
+52. Besimple AI
+Title: AI powered data annotation
+Description: Spin up your own data annotation platform in 60 seconds!
+
+High-quality, human-reviewed data is essential for improving AI models.  Yet, many teams still use outdated tools or spreadsheets that aren’t built for complex data from LLMs and AI agents. This slows down iteration, drives up costs, and makes model performance unpredictable in real-world use.
+
+With Besimple, you can generate your own platform for annotating AI evaluation and training data instantly.  Simply paste or stream any type of raw data—text, chat, audio, video, or LLM outputs—and we'll instantly generate a tailored annotation interface, clear guidelines, and an automated human-in-the-loop workflow.  Our AI Judges quickly learn from human annotations, take over labeling for easy cases, and evaluate live production data, letting your team focus only on critical edge cases.
+
+Key differentiators
+1. Instant custom UI - Automatically generate tailored annotation interfaces just by uploading your data. Adjust easily whenever data or needs change.
+2. Tailored guidelines – Import any existing guidelines or we will draft new ones aligned with your business goals, ready for annotation
+3. AI Judges for real-time evaluation – AI-powered judges continuously improve by learning human preferences, automatically labeling data and flagging tough cases for expert review.
+4. Enterprise-grade deployment – On-prem optional install, and robust user management for internal SMEs, external vendors, or Besimple’s vetted annotators.
+5. Lightning-Fast Setup: No code, no plugins—just drop in your data, set guidelines, and you’re good to go.
+
+Today we power evaluation and training pipelines for leading AI companies in customer support, search, education, and more.  For example, the leading AI grading company Edexia uses besimple to annotate hundreds of decisions and improve their evals.
+
+Besimple is built by a team that has done this before. Yi Zhong and Bill Wang built the annotation platform for Meta’s Llama models, significantly improving quality of data and shortening model development cycle.
+
+Reach out!
+
+If you’re building an AI product and struggle with good eval or training data —or if you have models in prod with no idea why they fail—let’s talk. We’ll show you how to launch a custom annotation flow in a minute, bootstrap an AI Judge in an afternoon, and start shipping better models tomorrow.
+URL: https://www.ycombinator.com/companies/besimple-ai
+
+53. Alkali
+Title: Your Copilot for Building Chemical Projects
+Description: Alkali is building the co-pilot for chemical process design. Spot design errors earlier, get the right equipment sooner, and build chemical projects faster.
+URL: https://www.ycombinator.com/companies/alkali
+
+54. Human Behavior
+Title: We reveal why users stay, leave, or pay
+Description: Human Behavior uses vision models to watch all user web sessions so you know exactly how users use every part of your product.
+URL: https://www.ycombinator.com/companies/human-behavior
+
+55. QualGent
+Title: AI Mobile App Quality Assurance Tester
+Description: QualGent is an AI Mobile App Quality Assurance Tester that mimics a real human, helping teams catch bugs and ship faster - without hiring more QA testers. One customer reached #3 in the Education category on the App Store by improving app quality with QualGent.
+
+Mobile bugs hurt: crashes kill ratings, broken checkouts drive churn. QualGent helps teams scale QA effortlessly and avoid Sonos-level disasters.
+
+The idea for QualGent was born from the founders’ experience leading engineering teams at Google across Android XR, Stadia, Quick Share, and foldable devices where shipping to billions of users meant constantly facing the painful trade-off between moving fast and maintaining quality. With prior research experience at Nvidia, Maryland, and Berkeley, the team saw a clear opportunity: use AI to scale QA.
+
+QualGent’s vision is to close the loop on software creation. As AI enables engineers to code 100x faster, QualGent eliminates the next bottleneck—software verification—unlocking truly scalable, end-to-end software development.
+URL: https://www.ycombinator.com/companies/qualgent
+
+56. Prism AI
+Title: AI-native Datadog + Amplitude
+Description: 
+URL: https://www.ycombinator.com/companies/prism-ai
+
+57. Novoflow
+Title: AI employees that automate medical operations for clinics.
+Description: Novoflow is building AI employees that automate medical operations for clinics. Novoflow built the universal bridge into EHR systems—so every workflow, from scheduling to billing, can finally run on AI. The first product is an AI employee that talks to patients and uses computer agents to book, reschedule, and recover cancelled appointments. Built for healthcare providers and hospitals.
+URL: https://www.ycombinator.com/companies/novoflow
+
+58. Theta Software
+Title: Self-Learning for AI Agents
+Description: 
+URL: https://www.ycombinator.com/companies/theta-software
+
+59. Lyra
+Title: AI-Native Zoom For Revenue Teams
+Description: At Lyra, we believe B2B sales hasn’t meaningfully evolved in decades — until now. The next industrial revolution is here, and we’re building the platform to power it.
+
+Modern buyers want less talk, faster decisions, and seamless experiences. Lyra helps sales teams close more deals, shorten sales cycles, and operate more efficiently — all with minimal rep involvement.
+
+We built our own meeting software from the ground up with a real-time AI agent at its core:
+- Surfaces and personalizes relevant sales collateral using live conversation intelligence
+- Keeps deals moving by answering buyer questions when reps are offline
+- Replaces decks, screen shares, and long email threads with a single interactive workspace — called a Lyra. It hosts your meetings, onboarding, and integrates tools like DocuSign to give buyers a seamless path from first call to signed contract
+
+Hundreds of sales calls are already hosted on Lyra, including several YC companies. We hit $100K ARR in our first two weeks.
+
+We’re rethinking the sales stack from first call to signed contract.
+URL: https://www.ycombinator.com/companies/lyrahq
+
+60. Cleon
+Title: AI Agents for Software Implementations
+Description: Cleon is building an AI-native software implementation platform to speed up customer onboarding, beginning with a focus on ingesting complex Excel files with agentic AI. 
+
+B2B SaaS companies have millions of dollars of contracted revenue sitting behind implementations. Cleon handles everything from the big picture (generating requirements and aligning stakeholders) to the details (data cleaning and schema mapping). 
+
+The team consists of Alexandros (ex-athlete in rowing and engineer at a proptech startup), Rohan (engineer at a fintech startup with long implementations and at an SAP code migration startup), and Ric (banker at RBC and enterprise sales at Palantir).
+URL: https://www.ycombinator.com/companies/cleon
+
+61. throxy
+Title: Vertical AI agents that run the sales funnel on autopilot
+Description: throxy is building vertical AI agents that book meetings for companies selling into traditional industries like manufacturing, logistics, education, and finance.
+
+Outbound is broken—generic automation gets ignored, and legacy sectors are hard to crack. throxy fixes this by running bespoke, fully-managed outbound systems for sales teams. We combine AI Agents with human experts to deliver hyper-personalised campaigns that consistently generate six-figure qualified pipelines.
+
+Since 2023, throxy has powered outbound for B2B companies, from industrial manufacturers to fintech providers, replacing the need for internal SDR teams or heaps of tools, with a solution that outperforms in both speed and quality.
+
+Our founding team has built AI at JP Morgan, scaled businesses from age 14, and led enterprise sales from Seed to Series D. We’re not just automating outbound, we’re redefining what sales execution looks like in traditional industries.
+
+throxy is the AI SDR purpose-built for the sectors software forgot.
+URL: https://www.ycombinator.com/companies/throxy
+
+62. Lucis
+Title: Function Health for Europe
+Description: Think Function Health for Europe. We combine medical expertise and AI to transform regular blood testing into actionable insights to help people live healthier, longer.
+In four months in Paris, we've achieved $400K ARR, secured partnerships with France's leading lab networks, and partnered with key health influencers, proving our playbook works and scales rapidly. We are currently opening 4 new countries across Europe.
+URL: https://www.ycombinator.com/companies/lucis
+
+63. Flott HQ
+Title: AI-native operating system for vehicle fleet management
+Description: Flott helps transport and logistics companies run leaner, smarter, and more profitable operations. Flott unifies everything transport and logistics teams need in a single, AI-powered control center—bringing planning, live tracking (gps, fuel, etc), invoicing, and payments into one place and delivering true end-to-end visibility. Flott’s AI agents act as an extension of fleet managers — automating repetitive tasks and optimizing workflows.This lets companies focus on what truly matters: growing the business.
+URL: https://www.ycombinator.com/companies/flott-hq
+
+64. Crimson
+Title: The AI Associate for Litigation Lawyers
+Description: Crimson is the first AI platform purpose-built for complex disputes. Litigation teams use Crimson to analyze case files, draft legal documents and answer case-specific questions. By automating manual workflows throughout the lifecycle of a case, Crimson helps lawyers save more than 10 hours per week on common litigation tasks.
+URL: https://www.ycombinator.com/companies/crimson
+
+65. Casco
+Title: Evaluate AI agents and apps on security, safety, and accuracy.
+Description: Casco helps companies confidently ship AI agents and apps by simulating attacks on their AI systems, identifying vulnerabilities, and providing guided remediation.
+
+Companies building on AI face a disproportionate amount of cybersecurity threats. 73% of enterprises experienced at least one AI-related security incident in the past 12 months, with the average incident cost amounting to $4.8m. It also takes 40% longer for these companies to identify and address these breaches vs. non-AI related incidents.
+
+Check if your AI system is secure at casco.com
+
+---
+
+We already secure AI systems deployed in 60% of Fortune 500 companies and are default alive. [1]
+
+[1] http://www.paulgraham.com/aord.html
+URL: https://www.ycombinator.com/companies/casco
+
+66. Nomi
+Title: Cursor for Sales
+Description: Nomi provides on-the-spot phrase suggestions, intelligently crafted from your transcribed sales calls and a custom playbook that adapts and grows with you, from founder-led sales to revops mastery. 
+
+PS: We also increase closing rates by 12% on average and free up your sales team's mental energy.
+URL: https://www.ycombinator.com/companies/nomi
+
+67. Morphik
+Title: Open-source multimodal search for AI apps
+Description: Morphik is open-source multimodal search for AI apps. We're used by customers ranging from space-tech teams searching across research papers to developers building brokerage agents.
+URL: https://www.ycombinator.com/companies/morphik
+
+68. RunRL
+Title: Reinforcement learning as a service
+Description: RunRL improves LLMs and AI agents with reinforcement learning. Do you have a model that needs to get better at a certain task? Are you tired of messing around with prompts? Do you spend a lot of money on observability, and wish that all this data could let your model self-improve? Well, head on over to RunRL.com, and see what we have to offer! If you give us a model, a prompt, and a reward, we’ll make your model’s reward go up.
+URL: https://www.ycombinator.com/companies/runrl
+
+69. Ticket Wallet
+Title: AI-optimized ticket resale
+Description: Ticket Wallet is an AI-powered resale platform for season ticket holders and brokers.
+We automate pricing, listing, and distribution across all major marketplaces.
+
+Today, most tickets are still sold manually: spreadsheets, guessing prices, and listing on one site at a time. The biggest brokers outsource pricing to teams in the Philippines… 
+
+We built Ticket Wallet because we lived this. Truman has been flipping tickets for the last 5 years. Ryan built pricing software after seeing the mess first-hand. We’ve turned that pain into a product.
+
+Since launch, we’ve onboarded $3M+ in ticket inventory, signed up 100+ paying sellers, and started working with pro teams. We charge 10% per ticket sold. This is our wedge into the $26B resale market.
+
+Other platforms cost you money. We make you more of it.
+URL: https://www.ycombinator.com/companies/ticket-wallet
+
+70. Kaizen
+Title: Integrate instantly with any website.
+Description: Kaizen leverages browser agents to enable instant integration into websites without APIs. Leading AI companies use Kaizen to read and write data from legacy portals in logistics, healthcare, and financial services.
+URL: https://www.ycombinator.com/companies/kaizen
+
+71. HABIT
+Title: Reshaping neighborhood services with robotics.
+Description: HABIT is building a network of robotic deployment centers, and we have $77M in LOIs + a $1.9M binding contract for our first vertical — auto detailing.
+
+Our locations will deploy on-demand robotic labor to you — and to restaurants, hotels, stores, and farms in your neighborhood. Our first vertical — the $45B car wash and auto detailing market — is high cost, labor intensive, and already offered in thousands of locations across America.
+URL: https://www.ycombinator.com/companies/habit
+
+72. Clidey
+Title: Documentation made for AI Agents
+Description: Clidey is building Docucod (https://docucod.com)
+
+Docucod auto-generates and maintains always-up-to-date documentation—right from your codebase. Your team can move faster, onboard quicker, and stay focused on building.
+
+Seamless to set up and built for scale, it fits cleanly into any repo—whether you're shipping solo or leading a growing dev team. Docucod tracks your PRs and understands what changes need to be made to the documentation and then makes them.
+
+From onboarding guides to API references and system diagrams, Docucod creates clear, accurate documentation—without slowing you down.
+
+It’s developer-first, fully editable, and always in sync—so you never have to choose between speed and quality again.
+URL: https://www.ycombinator.com/companies/clidey
+
+73. Opusense AI
+Title: AI for Field Inspection Reports
+Description: Opusense AI automates field report writing for construction field inspectors. Instead of typing up notes at the end of the day, inspectors can now walk a site, speak observations aloud, snap photos, and let our AI assistant generate a detailed, organized report on-site and in real time.
+
+Combined, the founding team has over 15 years in the construction industry. Writing up these field reports used to take up at least 20% of the week. With Opusense, we cut that time by 5x. Our team combines deep construction experience with technical expertise, Roya has a PhD in civil engineering, and Michael has worked at multiple construction tech startups.
+
+Why hasn’t this been done before? Construction is slow to adopt new tech, and reporting is messy, photos, voice notes, and field notes all live in silos. Turning that into a clear, structured report requires real insight into how inspectors work and what clients need. Only now, with advances in AI, can we process unstructured data adequately to generate high-quality reports in real time.
+
+The opportunity is massive. Every inspection firm and contractor is struggling with documentation. Manual reports slow them down, create inconsistencies, and delay handoffs. We believe AI can do this better, and Opusense is proving it.
+URL: https://www.ycombinator.com/companies/opusense-ai
+
+74. Labric
+Title: The data layer for scientific research
+Description: Labric is building the data layer that makes AI work for science. We capture messy lab data from instruments and tools, clean it, and connect it— so researchers can actually use AI to accelerate discovery.
+URL: https://www.ycombinator.com/companies/labric
+
+75. Photonium
+Title: AI-Driven Optical System Design
+Description: Photonium automates optical system design. Think of us as Cadence or Synopsys chip design automation, but for optics instead of semiconductors. We handle the full design workflow—from optimization and verification to sourcing—for industries including quantum, biomedical imaging, LiDAR for autonomous vehicles and defense, and metrology for semiconductor fabrication.
+URL: https://www.ycombinator.com/companies/photonium
+
+76. Sixtyfour
+Title: Bloomberg for Sales
+Description: Our platform enables hypergrowth companies to deploy custom research agents that map their Total Addressable Market (TAM) and uncover real-time market signals — all fully tailored to what matters most to their team. Customers like Mercor, Hockeystack, and Conduit rely on us to stay ahead.
+URL: https://www.ycombinator.com/companies/sixtyfour
+
+77. Odapt
+Title: How great teams build internal software & agent workflows
+Description: Odapt lets anyone build AI-powered internal software using plain language. We connect all your apps and internal data into one place - giving our AI agents the cross-system awareness most tools lack. Operators, marketers, and finance leads can now prompt Odapt to design and ship context-specific tools in minutes, without any engineering bottlenecks.
+
+We believe software should be built by the people who use it. Teams already use Odapt to unify sales data, automate documentation, and run recruiting ops—all without writing a line of code. With AI, we’re unlocking 10x more builders inside companies - and giving them the tools to create what they need, when they need it.
+
+Our team has deep roots in AI, ops, and product:
+Lucas worked on code-gen at OpenAI and bootstrapped to $1M ARR.
+Ende deployed AI safety across 20M+ devices and was part of Stanford’s NLP lab.
+Madhav was an operator at McKinsey and founding BizOps lead at a recruiting startup.
+URL: https://www.ycombinator.com/companies/odapt
+
+78. Clado
+Title: Deep Research for People
+Description: Clado puts 200 million+ people profiles (and growing) at your fingertips with simple, agentic search. If you’re interested in a global people search for sales, spreadsheets, hiring, and more, try our product.
+URL: https://www.ycombinator.com/companies/clado
+
+79. Combinely
+Title: AI coworker for accountants
+Description: Accountants spend 30-40% of their day in Outlook – chasing clients, replying to questions, and digging through past emails for context.
+
+Built by an ex-Deloitte/Google team, Combinely’s AI-coworker proactively takes on work, helping accountants handle everything from answering client queries to producing & reviewing deliverables.
+URL: https://www.ycombinator.com/companies/combinely
+
+80. VoiceOS
+Title: Voice AI Interviews for Enterprise
+Description: Hiring at scale is broken. 
+
+Our solution: Voice AI that instantly interview every applicant — holds lifelike interviews tailored to each applicant's unique background. Recruiters see only a curated shortlist as VoiceOS fine-tunes the questions over time. 
+
+The payoff: days-to-hire instead of weeks, slashed overhead, and a recruiting engine that scales as fast as the enterprise.
+
+VoiceOS is setting a new standard for hiring excellence.
+URL: https://www.ycombinator.com/companies/voiceos
+
+81. Chiron
+Title: Grammarly for Math ✏️
+Description: Chiron is an iPad app that understands math as it’s written - like Grammarly for algebra. We’re both Oxford math grads, have tutored for a decade, and we’re creating the future of learning which will be entirely 1-on-1.
+URL: https://www.ycombinator.com/companies/chiron
+
+82. Jeevy Fabrication
+Title: AI Driven EPC - Weld Fabrication Contractor
+Description: Jeevy Fabrication is an AI-powered contractor that connects complex weld jobs to the best-fit shops—fast. We deliver top-tier QA and total transparency, all at better traditional outsourced pricing.
+
+Our software reduces bid and scheduling time for our in-network shops by over 80%. It converts manufacturing drawings into an accurate bill of materials and a resource-loaded, high-fidelity schedule—eliminating costly errors and rework. Using this our in-network fabricators can bid on more jobs and deliver more reliable results than their competitors. 
+
+We also offer our clients a streamlined purchasing and project tracking experience. Clients submit purchase requests, track schedules, access key documents, and receive real-time photo updates—all in one place. We provide traceability for easy material review and maintenance of domestic content standards as required. Faster decisions, fewer delays, complete visibility.
+URL: https://www.ycombinator.com/companies/jeevy-fabrication
+
+83. Trapeze
+Title: AI-native Zocdoc
+Description: Trapeze empowers doctors to answer patient calls 24/7 with our voice agents clones of their best call center reps and receptionists. In the past 3 months, we’ve onboarded 140+ doctors nationwide serving 1,000,000+ patients.
+
+We're building the AI-native Zocdoc to create the standard for how patients and providers find each other.
+
+Follow along on the BTS of our journey: https://www.tiktok.com/t/ZTjQyxEQx/
+URL: https://www.ycombinator.com/companies/trapeze
+
+84. Tinfoil
+Title: Tinfoil makes your AI workflows secure, verifiable, and private.
+Description: Tinfoil makes it easy to make your AI workloads provably private, without changing your code. You get the privacy of on-prem deployments, while running on the cloud.
+
+We’ve built a full-stack platform on top of the latest NVIDIA GPUs offering confidential computing capabilities, meaning that you don’t have to tradeoff performance for privacy. 
+
+Under the hood, we integrate a suite of recent advances in secure hardware technologies, in particular NVIDIA’s confidential compute mode available on Hopper and Blackwell. When combined with Tinfoil’s software stack, companies can prove their security claims rather than relying on unenforceable statements like "trust us, we don’t log your queries.” Tinfoil guarantees that all data always stays private and cannot be accessed by anyone other than the end user — not even by Tinfoil or the cloud provider it’s processed on. 
+
+The founding team combines deep academic and industry experience in security and internet protocols. Tanya was previously a systems engineer at Cloudflare, where she built Internet security protocols used by billions, and contributed to the Workers AI platform. Jules and Sacha recently completed their PhDs at MIT where they worked on secure hardware and privacy-preserving technologies. Jules has also worked at NVIDIA on their confidential computing team. Nate has deep infrastructure experience, starting in high school when he built a mini-CDN that got him an internship at Cloudflare. Tinfoil was born from our personal frustration with the false choice between access to powerful AI and data privacy.
+
+As AI becomes tightly integrated into our lives and business workflows, it will touch an ever increasing amount of sensitive personal and proprietary data. Right now, the only solutions are DPAs, band-aids like PII redaction, or the nuclear option of running everything on-prem. These solutions are not scalable.  By making it easy to deploy provable privacy, Tinfoil promises to unlock significantly deeper AI adoption and integrations, just as TLS on the Internet enabled e-commerce to flourish by securing credit cards on the network.
+
+If OpenAI is creating “God in a box”, we are putting God in a blackbox, so Satan can’t spy.
+URL: https://www.ycombinator.com/companies/tinfoil
+
+85. The LLM Data Company
+Title: Datagen Tooling for Evals & RL
+Description: The LLM Data Company creates tooling to write, version and execute evals for models and agents. We help you measure performance and define rewards for reinforcement learning.
+URL: https://www.ycombinator.com/companies/the-llm-data-company
+
+86. Operative
+Title: Web application code generation for internal APIs
+Description: Operative uses AI to help organizations generate & modify internal frontend applications that connect to their existing backend APIs. You can think of it like Retool, except instead of external integrations, we connect into an organization’s internal backends, and we use AI to generate the frontend code for the web applications users want to create.
+URL: https://www.ycombinator.com/companies/operative
+
+87. Parsewise
+Title: Business Analytics for Unstructured Data
+Description: Turn complex documents into validated information that business experts can trust and verify. Parsewise saves enterprises hours each day by automating human data tasks in analytics, benchmarking, and reporting workflows.
+URL: https://www.ycombinator.com/companies/parsewise
+
+88. Better Auth
+Title: The authentication framework for TypeScript
+Description: Better Auth is a comprehensive authentication framework for TypeScript that lets you implement everything from simple auth flows to enterprise-grade systems directly on your own database, embedded in your backend. It’s loved by developers all over the world and endorsed by leading voices in the ecosystem.
+
+On top of the framework, Better Auth also provides an infrastructure layer to help you scale with user management and analytics, bot and fraud detection, transactional email and SMS, global session storage and more.
+URL: https://www.ycombinator.com/companies/better-auth
+
+89. Bluejay
+Title: The world's first quality assurance agency for voice AI.
+Description: Bluejay’s mission is to engineer trust into every AI interaction, becoming the trust layer between businesses and their customers.
+URL: https://www.ycombinator.com/companies/bluejay
+
+90. Kestral
+Title: AI Agents that prioritize the highest impact work across Sales and R&D
+Description: Kestral makes it clear what your customers want most, prioritizes those tasks for highest leverage, and closes the loop with those customers.
+
+We (Brian and Bernard) have been close friends since university, and most recently worked together at Asana, leading AI and Authorization efforts. There we realized AI can completely disrupt the $50B Work Management Market, but it required a fresh start.
+
+What work we even choose to manage in the first place is critical, and the most important insights from customers are silo-ed in sales/CS while R&D gives their best shot at roadmaps meant to deliver impact. Significant requests sit in a backlog, duplicate asks flood the system, months wasted on "strategic investments". We want to bridge this gap.
+
+This message is resonating with heads of sales, heads of product, CEOs, as well as individuals, all trying to make sure the most important things get done, with less wasted effort and more revenue/retention.
+
+Kestral works by automatically take in customer data like sales call transcripts & feature request messages and a team of agents:
+1. analyze them for actionable takeaways, deal blockers, and nice to haves
+2. consolidate them and manage all the asks with citations
+3. prioritize them by impact and frequency to cut through the noise so you can see the biggest opportunities clearly
+4. connect them to your existing strategic roadmap so when the work gets done, we can automatically follow back up with your customers and win them over
+
+This is just step one of our mission to revolutionize how work gets done -- starting with what we choose to work on, and hope you follow us along for the ride!
+URL: https://www.ycombinator.com/companies/kestral
+
+91. Attune
+Title: Faster builds, zero effort.
+Description: Attune makes blazingly fast build tools that require zero migration effort.
+
+As AI enables developers to write code faster than ever, slow builds are increasingly becoming the bottleneck in development velocity. Developers regularly lose hours of productivity every day waiting for their builds. Imagine being able to write code in 1 minute, but needing to wait 30 minutes to compile, deploy, and test it.
+
+Existing solutions either require painful migrations to new tools (e.g. Bazel) or rely on just using bigger servers to run your builds. Instead, we do native, first-class integrations into compilers and build systems.
+
+With Attune, you don't need to integrate a new tool. Just make a one-line change from `cargo build` to `hurry cargo build` for 20x faster builds.
+
+Eliza (ex-Google) and Xin worked together for 3 years at FOSSA, where Eliza was Head of Engineering and Xin was Head of Product. Eliza brings a decade of programming languages and build systems expertise, while Xin brings a decade of experience building developer tools products, most recently as VP of Product at Teleport (S15). Having experienced the pain of slow builds firsthand across hundreds of production codebases, we're building the solution we've always wanted.
+URL: https://www.ycombinator.com/companies/attune
+
+92. PgDog
+Title: Scaling engine for PostgreSQL
+Description: PgDog is an application for sharding PostgreSQL. It understands SQL and can distribute queries automatically between databases. It's built for managed databases, like AWS RDS, and doesn't require any changes to application code or schema.
+
+In addition to sharding, PgDog is a load balancer and pooler, so it can act as a replacement for PgBouncer, RDS Proxy, and other Postgres scaling products. It brings the simplicity and performance of HTTP load balancing to the database.
+
+Built from the experience of sharding Postgres at Instacart during peak growth in 2020, PgDog is the answer to the old question: does Postgres scale? It does now.
+URL: https://www.ycombinator.com/companies/pgdog
+
+93. Caucus
+Title: AI CRM for Government
+Description: Caucus is the last piece of software the American government will ever need. We're building an AI CRM for government. Caucus empowers government workers to streamline their daily tasks, eliminate fragmentation, and work at the speed of thought, enabling public servants to focus on high impact work and service.
+URL: https://www.ycombinator.com/companies/caucus
+
+94. Kirana AI
+Title: AI manager for physical stores
+Description: Kirana AI is building the first full-stack AI store manager.
+
+With 100 years of family experience owning and operating grocery stores, we are starting there to prove our impact.
+
+Our first product utilizes an on-premise GPU that monitors the store 24/7, scans for theft, looks for workplace health and safety issues, and optimizes customer service. 
+
+With future POS/ordering data integrations, our manager will automate many of the day-to-day tasks of running a store, such as ordering, pricing, assortment, and delegating.
+URL: https://www.ycombinator.com/companies/kirana-ai
+
+95. Mbodi AI
+Title: Embodied AI Platform for Industrial Robotics
+Description: Teach robots new skills through natural language and run reliably in production in minutes.
+
+Mbodi combines generative AI, agent orchestration, and symbolic reasoning, turning everyday language and quick demos into precise, reliable robot actions for industrial automation.
+URL: https://www.ycombinator.com/companies/mbodi-ai
+
+96. Percival
+Title: AI-powered data entry for wholesalers and distributors
+Description: Percival helps wholesalers and distributors automate data entry by using AI to process documents like purchase orders and price lists. 
+
+When wholesalers and distributors sell to other businesses, they often receive purchase orders as PDFs over email. Customers frequently use different identifiers for items, different units, and close but not quite the same descriptors. Employees aren't just copy-pasting (or manually typing) PDF data into an ERP, they have to validate every item in the ERP.
+
+With Percival, businesses can just email customer POs and other requests to a dedicated @percivaltech.com email address. Once the request is handled, Percival responds to the email with the result: whether that's an order number in the ERP or a list of prices.
+URL: https://www.ycombinator.com/companies/percival
+
+97. VibeGrade
+Title: Cursor for Teachers
+Description: VibeGrade is the AI that works directly inside Google Classroom, Google Docs, and Canvas to grade papers 10x faster, in the teacher's style. 
+
+Teachers often spend hours of their own time grading hundreds of papers, which can lead to rushed and generic feedback for students. 
+
+Unlike other grading tools that require bulk uploads and remove teachers from the process, VibeGrade allows teachers to use AI to write high-quality, teacher-like feedback—right within the LMS.
+URL: https://www.ycombinator.com/companies/vibegrade
+
+98. YouLearn
+Title: AI tutor for each student.
+Description: YouLearn is an AI tutor for college students. It turns your learning materials into concise notes, an AI tutor you can talk to, and personalized tests.
+URL: https://www.ycombinator.com/companies/youlearn
+
+99. stratify
+Title: AI agents that help you understand your customers' needs
+Description: Stratify is the AI-powered user researcher that discovers the why behind every decision, click, and preference.
+Our platform uses agentic workflows that instantly recruit participants, conduct user interviews, analyze responses, and provide actionable insights.
+URL: https://www.ycombinator.com/companies/stratify
+
+100. Sim Studio
+Title: The open source AI agent builder
+Description: Sim Studio is the fastest way to build AI agents for production. 
+Our Figma-like canvas lets teams quickly connect LLMs to their favorite tools (Slack, Supabase, Pinecone, Gmail).
+We're open-source with over 4k stars on GitHub in the last 2 months.
+URL: https://www.ycombinator.com/companies/simstudio
+
+101. Clarm
+Title: Perplexity for internal docs
+Description: Clarm is your AI-native search and agent builder on internal docs. We are the #1 alignment meeting killer.
+
+Our first customers are delighted to pay us 10x less than they would spend on a Chief of Staff, creating daily product release notes, customer feedback analysis, capturing sales objections, and running dedicated customer support channels. The COO's hair is on fire and we put it out.
+
+Our platform is built on agentic search, connecting across 40+ enterprise integrations - CRMs, email, knowledge bases.
+
+Agents often fail because their underlying context windows are mismatched, leading them to hallucinate. We built enterprise native agentic search to ensure agents have all the context they need to operate fully autonomously.
+
+Here's what Clarm's C-suite buyers use us for:
+
+- a blockchain company to provide an on-demand source of product truth in natural language, reducing alignment meetings by 90%
+- a financial services firm to supercharge their own product by integrating it with the target's enterprise knowledge
+- the top 5 X25 open source startups (by star count) to increase engagement with their Github repo and knowledge base, turning repo visitors into contributors and customers
+- North America's largest fertility clinic to tailor '000s of client support questions with extremely high sensitivity, driving up engagement and turning prospects into committed customers
+URL: https://www.ycombinator.com/companies/clarm
+
+102. Beluga Labs
+Title: Rippling for Content Creators
+Description: The rapidly growing creator economy ($250B+) consists of millions of solo entrepreneurs still managing complex business finances with spreadsheets and a patchwork of disconnected tools. They face volatile multi-source income, unique business expenses, and daunting U.S. tax obligations: leading to significant stress, lost time, and missed financial opportunities.
+
+Beluga Labs is building the financial operating system for these modern solopreneurs. Our platform starts with intelligent bookkeeping: we connect all their financial accounts, use AI to automatically categorize income and expenses, and assess their potential tax deductibility, giving creators a clear picture of their business finances and tax preparedness. This core solution, already actively used for expense management and tax Q&A, is the first step. We will rapidly expand to automate quarterly tax filing and payments, then provide integrated tools for S-corp formation and management, payroll, and benefits: truly becoming the 'Rippling for content creators.' Our success means creators save more money, reduce administrative burdens, and can confidently focus on their craft and growth within the creator economy.
+URL: https://www.ycombinator.com/companies/beluga-labs
+
+103. Kaelio
+Title: AI operating system for healthcare organizations
+Description: Kaelio is building the AI operating system for healthcare organizations.
+
+We unify clinical, operational, and financial data for hospitals, health systems, and health plans - giving them AI agents that flag emerging risks, and take actions to enhance clinical, financial and operational performance.
+
+Healthcare organizations are drowning in dashboards they can't act on - or worse, flying blind because they lack the resources. We change that.
+URL: https://www.ycombinator.com/companies/kaelio
+
+104. Zenobia Pay
+Title: Bank transfers as payments for luxury retailers.
+Description: Zenobia Pay enables luxury brands and jewelers to accept pay-by-bank. We’ve built an instant clearing pay-by-bank network with bundled fraud insurance that costs 3 times less in fees than credit card processing.
+
+We are building Zenobia Pay specifically for expensive goods. Items are high intentionality, so we can actually convert customers at checkout. Payments go through your phone without you having to download an app.
+
+We use purchase metadata to provide a digital proof of purchase for the entire lifespan of luxury goods so that brands can earn fees verification fees on the $39B resale market, which is growing 3 times faster than new sales. 
+
+Zenobia Pay is a branded pay-by-bank rewards network that is the default payment mechanism for all purchases over $200.
+URL: https://www.ycombinator.com/companies/zenobia-pay
+
+105. Zeon Systems
+Title: AI-powered robotics for scientific lab automation.
+Description: We’re building AI-powered systems that automate manual work in scientific labs using robotics.
+
+Scientists simply type their experiment in plain English. Zeon translates it into code and runs it on robotic arms (no coding required).
+
+By controlling robots with natural language, we’re enabling automation for every lab, every scientist, and every experiment.
+
+Zeon is lab-aware. It detects equipment, adapts to protocols, and moves autonomously between instruments to execute full workflows.
+
+We’re already working with labs at Stanford and UCSF to accelerate discovery - from running overnight nanoparticle fluorescence measurements to safely disposing of hundreds of bacterial samples. 
+
+Zeon reclaims time for what matters most: the science.
+URL: https://www.ycombinator.com/companies/zeon-systems
+
+106. The Robot Learning Company
+Title: Affordable robotic workers
+Description: We make automation accessible to businesses with an affordable, general-purpose robot platform designed to automate repetitive, stationary tasks.
+URL: https://www.ycombinator.com/companies/the-robot-learning-company
+
+107. HelixDB
+Title: Supabase for agents
+Description: As AI agents replace traditional software, they need a way to store, recall, and reason over contextual data. HelixDB gives them all of that in one system. We’re building the knowledge infrastructure every AI agent will depend on.
+URL: https://www.ycombinator.com/companies/helixdb
+
+108. Chonkie
+Title: Open Source Data Ingestion For AI
+Description: Chonkie breaks down large documents into smaller, meaningful chunks, making it easier for AI to process information. By ensuring that models receive only relevant and well-structured context within their token limits, Chonkie improves response accuracy and speed. Our tools are built to integrate seamlessly with any tech stack, so you can focus on leveraging your AI's full potential easily.
+URL: https://www.ycombinator.com/companies/chonkie
+
+109. Almond
+Title: AI robots for manufacturing
+Description: Almond is building a vision-based AI robot for high-mix pick & place automation. We provide a fully-integrated robot-as-a-service that helps manufacturers save money and increase their revenue.
+URL: https://www.ycombinator.com/companies/almond-2
+
+110. Claim Health
+Title: The first AI revenue platform for post-acute healthcare
+Description: Post-acute agencies lose up to 15% of revenue each year to denials, non-compliant documentation, and delayed payments. Most treat it as a cost of doing business. Instead of waiting weeks for rejections and appealing claims one by one, Claim Health flags issues in real-time and automates claim corrections and appeals—before revenue is lost.
+
+While working with healthcare providers, we found most denials stem from small, preventable documentation errors. As payor requirements grow increasingly complex and fragmented, billing has become a manual, error-prone process. Claim Health closes the loop between documentation and billing outcomes—using AI to detect issues, automate workflows, and recover thousands in missed revenue each week.
+
+Kevin and JJ bring nearly a decade of experience building and scaling healthtech companies. At Dandy, JJ was a founding engineer and Kevin was the first GTM hire; together they helped grow the business from 0 to $150M+ ARR. At Perry (now Jolly), JJ led engineering and Kevin was Head of Sales, driving the company through a $16.5M Series A led by Tesla’s former CFO.
+
+In under three weeks since incorporation, we've launched with three agencies and are in early discussions with large U.S. health systems.
+
+Post-acute care is a $400B market with over $20B in annual revenue leakage due to broken billing workflows. Claim Health is fixing that—starting with denials, and expanding into the full revenue cycle stack.
+URL: https://www.ycombinator.com/companies/claim-health
+
+111. Capacitive
+Title: The AI Agent Platform for Knowledge Workers.
+Description: Enterprise AI without your internal data is like a computer without internet. When vital information is scattered across Slack, Notion, and Salesforce, AI tools can't deliver. And connecting dozens of those tools directly to your systems introduces significant security vulnerabilities and maintenance challenges.
+
+Capacitive offers a better way: connect us once to where your data lives, then create secure data gateways with granular cross-platform permissions, comprehensive monitoring, and robust security filtering. Supercharge tools like Cursor with product and team-level context — or use those access points via our built-in AI chat system, where your team can navigate your organization's knowledge and perform actions across platforms in one place.
+URL: https://www.ycombinator.com/companies/capacitive
+
+112. Anvil
+Title: Anvil is the SEO platform for the AI era
+Description: We show you how your brand performs in LLMs like ChatGPT — and how to get found more often.
+URL: https://www.ycombinator.com/companies/anvil
+
+113. Approval AI
+Title: One-click mortgage: AI shops, negotiates, and handles your application
+Description: Approval AI is an AI-powered mortgage co-pilot that automates the most complex parts of getting a mortgage: rate shopping, negotiation, and paperwork, all in one place. We automate what brokers and loan officers do, and hand those tools directly to the buyer.
+URL: https://www.ycombinator.com/companies/approval-ai
+
+114. Auctor
+Title: Automating Enterprise Software Implementations
+Description: Auctor is used by leading solution engineers, system integrators, and professional services teams. Our AI agents capture requirements, generate aligned artifacts, and streamline discovery to deployment—turning weeks into hours.
+URL: https://www.ycombinator.com/companies/auctor
+
+115. neoncoral
+Title: 🪸 AI consumer social
+Description: 
+URL: https://www.ycombinator.com/companies/neoncoral
+
+116. Galen AI
+Title: Personal AI healthcare agent, powered by clinical and wearable data.
+Description: Galen is an AI-powered personal healthcare companion. We enable patients to securely connect their medical records from over 800 healthcare institutions across more than 12,000 locations in the United States, United Kingdom, and Canada. We also connect with over 20 popular wearable devices including Apple Watch, Fitbit, and Dexcom, bringing all your medical records and health data into one unified space. 
+
+We founded Galen because for over four years, Viraj struggled to navigate several conditions related to chronic low back pain. He often found himself waiting weeks for responses from his care team, received little guidance or education about new diagnoses, and was overwhelmed trying to manage overlapping conditions and medications.
+
+His experiences are not unique. Our healthcare system is overloaded and fragmented, and often, patients are left to navigate their care on their own. Everyday there are nearly 1 billion health-related Google searches, but the responses to such queries are generic and impersonalized, because the searches lack any insight into a users personal health background.
+
+By leveraging your own data and state-of-the art LLM memory capabilities, Galen delivers personalized insights, proactive health recommendations, and 24/7 on-demand medical support — empowering patients to be an active part of their health team. We are a consumer app in beta testing and will be available on the App Store soon!
+URL: https://www.ycombinator.com/companies/galen-ai
+
+117. SynthioLabs
+Title: Voice AI Medical Rep for Pharma
+Description: Pharma spends billions on medical and sales teams. Yet many physicians still don’t get the timely, relevant medical insight they need.
+
+So we built an AI Medical Expert for Pharma GTM teams. Our Medical grade Voice AI Platform delivers compliant, science-first engagement to physicians and patients
+
+It’s like adding 100 medical reps to your team, without the headcount.
+
+Our vision? To reimagine how pharma engages its most important stakeholders — patients and HCPs
+
+We’re ex-McKinsey, ex-ZS Life Sciences experts and AI Researchers from AWS. We have worked with 10 of the top 20 pharma companies and bring over a decade of experience in Life Sciences. 
+
+We're synthiolabs.com. Reach out to learn more!
+URL: https://www.ycombinator.com/companies/synthiolabs
+
+118. Cua
+Title: Docker for Computer-use Agents
+Description: Cua is an open-source framework that enables AI agents to control full operating systems within high-performance, lightweight virtual containers. It delivers up to 90% native speed on Apple Silicon and works with any language models.
+URL: https://www.ycombinator.com/companies/cua
+
+119. Minerva
+Title: AI to Replace SMB Bookkeepers
+Description: From bookkeeping to tax filing—Minerva effortlessly does your business accounting at a fraction of the cost.
+URL: https://www.ycombinator.com/companies/minerva
+
+120. Kanava AI
+Title: Your First AI Sales Hire for Wholesale Distributors
+Description: Distributors face a shrinking workforce and rising call volume.
+
+Kanava AI builds voice-based agents that act like junior sales reps — starting with routine inbound calls, stock and price checks, field note logging, and CRM updates using live ERP data.
+
+As the system learns from top reps and real workflows, it levels up: managing full sales calls, surfacing upsells, coaching teams, and reactivating dormant accounts.
+
+We help distributors scale sales output without adding headcount — by automating the work reps shouldn’t be doing in the first place.
+URL: https://www.ycombinator.com/companies/kanava-ai
+
+121. GroundControl
+Title: Vertical AI for highly-regulated manufacturing
+Description: GroundControl builds mission-critical software for manufacturers in highly-regulated industries (aerospace, defense, medical)
+
+Our core product automates lengthy, complex, and regulated quality documentation in aerospace manufacturing.
+
+As an example, the Boeing 777 is made up of over 3 million parts sourced from manufacturers around the world. These manufacturers must complete quality documentation for every part on this aircraft (machined parts, printed circuit boards, wire harnesses, assemblies, and more).
+
+GroundControl helps manufacturers complete this required documentation accurately, in minutes instead of days.
+URL: https://www.ycombinator.com/companies/groundcontrol
+
+122. Avallon AI
+Title: AI agents for insurance claims operations
+Description: Avallon automates insurance claims operations with AI agents that handle routine calls and documents processing.
+URL: https://www.ycombinator.com/companies/avallon-ai
+
+123. Bloom
+Title: Build and share mobile apps in seconds
+Description: Bloom lets you vibe code cross-platform apps and test them on your phone natively in seconds. Unlike other vibe code tools, Bloom deploys a backend for you, so you can build functional MVPs and personal apps, not just toys.
+URL: https://www.ycombinator.com/companies/bloom-4
+
+124. cubic
+Title: AI-powered code review platform
+Description: Code review is a major bottleneck for software teams, and the rise of AI-generated code is making the problem worse. Reviewing large volumes of code slows devs down, and increases the chances of bugs slipping through.
+
+That's why we're building cubic: an intelligent code review platform that helps devs merge PRs 28% faster.
+
+How? 
+- When you open a PR, cubic automatically reviews it. It learns from your codebase's patterns, points out bugs, suggesting fixes, and frees you from low-level review tasks.
+- You then jump into the cubic platform, which is designed to optimize how humans review code. For example, file changes are organized in a logical order instead of alphabetical, and cubic generates diagrams of architecture changes.
+URL: https://www.ycombinator.com/companies/cubic
+
+125. Notus Autonomous Systems
+Title: Swarm robotics and full AI-command hierarchy integration
+Description: We develop drones and land based autonomous robots that are designed to be controlled as groups and execute autonomous missions instead of requiring skilled operators to pilot or control. Once a critical mass of intelligent devices are deployed on the battlefield, it will fundamentally reshape the command structure of the modern military into something resembling an RTS game (Like Starcraft, Civilization, Command & Conquer, etc), reducing response times from minutes to milliseconds.
+URL: https://www.ycombinator.com/companies/notus-autonomous-systems
+
+126. Golf
+Title: Open-source platform for building production MCP servers
+Description: Golf lets you ship a production-ready MCP server without worrying about the plumbing. You just write the tools, prompts, and resources you want agents to call. Golf handles everything else - routing, auth, telemetry, error reporting, and deployment - all managed through our hosted platform.
+URL: https://www.ycombinator.com/companies/golf
+
+127. BitBoard
+Title: The AI workforce for healthcare operations.
+Description: BitBoard lets healthcare providers hire AI agents for repetitive administrative work within their existing tools and systems.
+
+BitBoard agents are already recovering thousands of hours previously spent on tedious tasks like reviewing intake forms and updating patient charts.
+
+The founders were early employees at Forward, where they delivered primary care across the US with support from thousands of remote contractors handling manual administrative tasks. AI agents are finally capable enough to help.
+URL: https://www.ycombinator.com/companies/bitboard
+
+128. nao Labs
+Title: Cursor for data teams.
+Description: nao is an AI code editor for data teams. Its AI agent is natively integrated with your data warehouse, and trained on data workflows - so it can write code that actually works on your data and guarantees its quality.
+URL: https://www.ycombinator.com/companies/nao-labs
+
+129. Vybe
+Title: Lovable for internal apps
+Description: We're 2 repeat YC founders. We founded Plato (W16, sold to Coda) and Wolfia (S22). Quang lead Product/GTM for Coda Solutions and Fabien is ex-SWE at Meta and lead Engineering at Wealthfront before.
+
+We’re building Vybe: "Lovable for internal apps". We come with pre-built building blocks: Integrations (Gmail, Gcal, Github, Jira, etc.), SSO and AI tools (Websearch, Summarization etc.) so anyone in a company can build and launch internal AI-powered apps.
+
+Vibe coding is dramatically lowering the barrier for non-technical users to create full web apps. Lovable, Replit, Bolt, Google, Canva, Figma all launched their vibe-coding platforms. People love them. They're great for prototyping, but it's difficult to roll out inside a company for internal use cases for those reasons: 
+
+1. Data: If you want to connect your existing data (e.g. Salesforce, Gmail, Jira), you'd need to rebuild the API auth, pagination, etc. 
+
+2. SSO: If you build 20 apps, you'll have 20 different logins
+
+3. Security: AI-built apps have massive risk of exposing data, especially if built by non developers
+
+So companies are stuck in the old world: clunky spreadsheets, rigid SaaS solutions or complex no-code tools.
+
+Time to build!
+URL: https://www.ycombinator.com/companies/vybe
+
+130. Aravolta
+Title: Software to monitor, control, and optimize data centers.
+Description: Aravolta provides a single pane of glass software for data centers to increase uptime, reduce costs, and improve performance.
+
+A single utility node onboards every asset within an hour and detects hardware failures, hotspots, and other issues.
+
+It also generates reports on important metrics like Power Usage Effectiveness (PUE), energy metering, resource utilization, and much more.
+URL: https://www.ycombinator.com/companies/aravolta
+
+131. Kashikoi
+Title: Simulation Engine for Benchmarking AI Products
+Description: Kashikoi is a simulation engine to benchmark AI agents. We generate CPU friendly world models that autonomously interview agents and generate deep behavioral assessments. We built a similar technology at Moveworks which was used to ship 250+ enterprise agents to customers daily.
+URL: https://www.ycombinator.com/companies/kashikoi
+
+132. Plexe
+Title: Open-source agents to build predictive ML models from a prompt
+Description: Plexe builds predictive ML models from a problem description. It connects to data sources, conducts experiments, evaluates and deploys the models to an API endpoint.
+URL: https://www.ycombinator.com/companies/plexe
+
+133. Frekil
+Title: Scale AI for Medical Scans
+Description: AI is transforming healthcare, but the biggest bottleneck remains—procuring and annotating medical images with speed, accuracy, and scale. Frekil eliminates this roadblock.
+
+Frekil helps healthcare AI teams, medical device companies, and pharmaceutical companies procure and annotate medical images like X-rays, CTs, MRIs, etc., efficiently for AI training, clinical trials, and FDA approvals. Our AI-assisted platform speeds up annotation 10x while maintaining high accuracy through real-time quality control, consensus checks, and advanced 3D visualization.
+
+We also provide tools to track annotator performance, build custom workflows, and increase labeling accuracy. By combining efficiency with precision, Frekil enables teams to build high-quality datasets much faster, supporting the development and deployment of reliable medical AI and clinical research solutions.
+URL: https://www.ycombinator.com/companies/frekil
+
+134. Chestnut
+Title: The first AI mortgage lender
+Description: Chestnut is the first AI mortgage lender. We automate 99% of human work with AI agents, saving customers 0.5%+ in interest. This is Spencer's second mortgage startup; the first processes 2% of US mortgages annually. So far, Chestnut is licensed in Texas and Colorado where we power purchases, refinances, cash-outs, and more.
+URL: https://www.ycombinator.com/companies/chestnut
+
+135. QFEX
+Title: 24/7 Global Stock Exchange
+Description: QFEX is the 24/7 exchange for traditional financial markets.
+
+We let you trade US equities, commodities and FX pairs with (or without) leverages of up to 100x. On QFEX, UX comes first: brokerless market access, seamless integration with traditional payment rails, and ultra-efficient Perpetual Futures offered over all asset classes. Trading has never been simpler, cheaper or fairer than with QFEX.
+
+Founded by Quants and Engineers from Citadel & Tower Research who saw an opportunity to make markets how they always should have been, QFEX will eventually replace the entire $100 billion exchange and clearing industry.
+URL: https://www.ycombinator.com/companies/qfex
+
+136. Blaxel
+Title: AWS for AI Agents
+Description: Blaxel is a cloud infrastructure to power AI agents. Our platform gives AI companies the toolbox and infrastructure to build and deploy agents efficiently. 
+
+Billions of agents, tools, and models will transform how we work in the coming years. Traditional cloud providers weren't designed to handle them—their one-size-fits-all architecture holds them back. We fixed that with Blaxel.
+
+What is it? A complete computing platform with:
+
+- all services for developers to fast-track deploying agents without reinventing the wheel — like framework-agnostic serverless deployments, an AI gateway for model routing and fallback, and custom MCP server hosting.
+- a flexible low-level API for builders to ship really performant agentic AI using our backbone infrastructure — using services like sandboxed VMs usable by agents, a programmable global gateway, and a 20ms-latency serverless compute engine.
+- and a seamless developper experience that integrates with their CI/CD, and APIs that can even be consumed by agents themselves!
+URL: https://www.ycombinator.com/companies/blaxel
+
+137. Atlog
+Title: Voice Agents for Physical Retail Stores
+Description: Atlog uses voice agents to conduct sales and recover outstanding payments for in-house agreements. Currently, each store makes 200+ sales and collections calls per day.
+URL: https://www.ycombinator.com/companies/atlog
+
+138. Waffle
+Title: AI Operating System for SMBs
+Description: Travel agents, fitness instructors, and personal tutors are using Waffle to manage their online presence. Since launching 3 weeks ago, our users have created 600 websites on Waffle. We’re now building plugins with Stripe, Resend, and Neon so users can manage their payments, email marketing, and booking system on Waffle too. We’re targeting $200B+ in annual spend by US SMBs on their customer acquisition tech stack.
+URL: https://www.ycombinator.com/companies/waffle
+
+139. Partcl
+Title: Design a chip in minutes
+Description: Partcl modernizes chip design automation with physics-informed models powered by GPU acceleration. 
+Our tools run up to 700× faster than legacy solutions, cutting weeks off development and unlocking AI-driven optimization.
+URL: https://www.ycombinator.com/companies/partcl
+
+140. Tropir
+Title: The AI that builds better AIs
+Description: Tropir is the first AI that builds better AIs.
+
+We don’t just trace where your pipeline broke—we fix it. Tropir analyzes the flow of logic across prompts, tools, and retrievals to pinpoint root causes, suggests targeted changes, reruns the pipeline with those fixes, and runs evals to check if things actually improved. If not, it keeps iterating until they do. You build the flow. We make it unbreakable.
+
+We're already used by teams building advanced agents, copilots, and RAG pipelines. As LLM-based systems grow, we believe Tropir will become essential infrastructure for every serious AI team.
+URL: https://www.ycombinator.com/companies/tropir
+
+141. Willow
+Title: The voice interface replacing your keyboard
+Description: Willow is an AI dictation app that lets you type with your voice. Built to 4x the productivity of anyone spending too much time on email, docs, and AI prompting workflows.
+
+We’re Mac-only for now. You can try it free at WillowVoice.com
+URL: https://www.ycombinator.com/companies/willow
+
+142. Atum Works
+Title: Gigascale Nanomanufacturing
+Description: Atum Works is building 3D ASML.
+
+Founded by Caltech and NASA engineers, we're starting the next scaling law of semiconductor manufacturing, this time in 3D.
+URL: https://www.ycombinator.com/companies/atum-works
+
+143. Leeroo
+Title: Continuously Learning AI Agents
+Description: Leeroo delivers continuously learning AI agents that learn much like human colleagues— from knowledge bases, human feedback, and even their own past experiences. That continuous learning bridges the gap between generic AI and the expert performance companies need. We’re starting with agents for data- and AI-teams.
+URL: https://www.ycombinator.com/companies/leeroo

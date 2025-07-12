@@ -29,6 +29,45 @@ export async function POST(request: NextRequest) {
 
     console.log('Starting to scrape:', url);
 
+    // Create a ReadableStream for streaming responses
+    const encoder = new TextEncoder();
+    const stream = new ReadableStream({
+      start(controller) {
+        (async () => {
+          try {
+            await scrapeCompanies(url, controller, encoder);
+            controller.close();
+          } catch (error) {
+            controller.error(error);
+          }
+        })();
+      },
+    });
+
+    return new Response(stream, {
+      headers: {
+        'Content-Type': 'text/plain; charset=utf-8',
+        'Cache-Control': 'no-cache',
+        'Connection': 'keep-alive',
+      },
+    });
+
+  } catch (error) {
+    console.error('Request parsing error:', error);
+    return NextResponse.json(
+      { 
+        error: 'Failed to parse request',
+        details: error instanceof Error ? error.message : 'Unknown error'
+      },
+      { status: 500 }
+    );
+  }
+}
+
+async function scrapeCompanies(url: string, controller: ReadableStreamDefaultController, encoder: TextEncoder) {
+  try {
+    console.log('Starting to scrape:', url);
+
     // Launch browser
     const browser = await chromium.launch({
       headless: true,
@@ -49,8 +88,63 @@ export async function POST(request: NextRequest) {
       console.log('Waiting for page content to load...');
       await page.waitForTimeout(3000); // Give time for content to load
 
+      // Handle infinite scroll / lazy loading to get ALL companies
+      console.log('Scrolling to load all companies...');
+      
+      let previousCompanyCount = 0;
+      let currentCompanyCount = 0;
+      let maxScrollAttempts = 20; // Prevent infinite loop
+      let scrollAttempts = 0;
+      
+      // Keep scrolling until no more companies are loaded
+      do {
+        previousCompanyCount = currentCompanyCount;
+        
+        // Scroll to bottom of page
+        await page.evaluate(() => {
+          window.scrollTo(0, document.body.scrollHeight);
+        });
+        
+        // Wait for new content to load
+        await page.waitForTimeout(2000);
+        
+        // Count current companies
+        currentCompanyCount = await page.evaluate(() => {
+          const allLinks = document.querySelectorAll('a[href*="/companies/"]');
+          return Array.from(allLinks)
+            .map(link => (link as HTMLAnchorElement).href)
+            .filter(href => {
+              return href && 
+                     href.includes('ycombinator.com/companies/') && 
+                     !href.endsWith('/companies') && 
+                     !href.endsWith('/companies/') &&
+                     !href.includes('/companies?') &&
+                     !href.includes('/companies/founders') &&
+                     !href.includes('/companies/industry/') &&
+                     !href.includes('/companies/location/') &&
+                     !href.includes('/companies/batch/') &&
+                     !href.includes('#') &&
+                     !href.includes('/jobs');
+            })
+            .filter((url, index, array) => array.indexOf(url) === index)
+            .length;
+        });
+        
+        scrollAttempts++;
+        console.log(`Scroll attempt ${scrollAttempts}: Found ${currentCompanyCount} companies (was ${previousCompanyCount})`);
+        
+        // If we've tried too many times, break out
+        if (scrollAttempts >= maxScrollAttempts) {
+          console.log('Max scroll attempts reached, proceeding with current companies');
+          break;
+        }
+        
+      } while (currentCompanyCount > previousCompanyCount);
+      
+      console.log(`Finished loading companies. Total found: ${currentCompanyCount}`);
+
       // Extract company profile links using stable href patterns instead of dynamic CSS classes
-      console.log('Extracting company links...');
+      console.log('Extracting all company links...');
       
       const companyLinks = await page.evaluate(() => {
         // Get all links that point to individual company pages
@@ -82,28 +176,39 @@ export async function POST(request: NextRequest) {
       console.log(`Found ${companyLinks.length} company links:`, companyLinks);
 
       if (companyLinks.length === 0) {
-        // Try to get more info about the page for debugging
-        const pageTitle = await page.title();
-        const pageUrl = page.url();
-        
-        return NextResponse.json(
-          { 
-            error: 'No company links found. The page might not have loaded properly or the structure has changed.',
-            debug: {
-              pageTitle,
-              pageUrl,
-              message: 'Try refreshing the Y Combinator page and make sure it shows a list of companies'
-            }
-          },
-          { status: 404 }
-        );
+        // Send error message
+        const errorMsg = { 
+          type: 'error',
+          message: 'No company links found. The page might not have loaded properly or the structure has changed.'
+        };
+        controller.enqueue(encoder.encode(JSON.stringify(errorMsg) + '\n'));
+        return;
       }
+
+      // Send initial progress message
+      const initialMsg = { 
+        type: 'progress',
+        message: `Found ${companyLinks.length} companies. Starting to scrape...`,
+        total: companyLinks.length,
+        current: 0
+      };
+      controller.enqueue(encoder.encode(JSON.stringify(initialMsg) + '\n'));
 
       const companies: CompanyData[] = [];
 
       // Visit each company profile and extract data
       for (const [index, companyUrl] of companyLinks.entries()) {
         try {
+          // Send progress update
+          const progressMsg = { 
+            type: 'progress',
+            message: `Scraping company ${index + 1}/${companyLinks.length}`,
+            total: companyLinks.length,
+            current: index + 1,
+            currentUrl: companyUrl
+          };
+          controller.enqueue(encoder.encode(JSON.stringify(progressMsg) + '\n'));
+          
           console.log(`Scraping company ${index + 1}/${companyLinks.length}: ${companyUrl}`);
           
           // Use domcontentloaded instead of networkidle to avoid hanging
@@ -169,13 +274,30 @@ export async function POST(request: NextRequest) {
           });
 
           if (companyData.name) {
-            companies.push({
+            const company = {
               ...companyData,
               url: companyUrl,
-            });
+            };
+            companies.push(company);
+            
+            // Send the company data immediately
+            const companyMsg = { 
+              type: 'company',
+              data: company
+            };
+            controller.enqueue(encoder.encode(JSON.stringify(companyMsg) + '\n'));
+            
             console.log(`Successfully scraped: ${companyData.name} - ${companyData.title}`);
           } else {
             console.log(`Failed to extract name for: ${companyUrl}`);
+            
+            // Send error for this specific company
+            const errorMsg = { 
+              type: 'company_error',
+              message: `Failed to extract data for company: ${companyUrl}`,
+              url: companyUrl
+            };
+            controller.enqueue(encoder.encode(JSON.stringify(errorMsg) + '\n'));
           }
 
           // Small delay to be respectful
@@ -183,6 +305,15 @@ export async function POST(request: NextRequest) {
 
         } catch (error) {
           console.error(`Error scraping company ${companyUrl}:`, error);
+          
+          // Send error for this specific company
+          const errorMsg = { 
+            type: 'company_error',
+            message: `Error scraping company: ${error instanceof Error ? error.message : 'Unknown error'}`,
+            url: companyUrl
+          };
+          controller.enqueue(encoder.encode(JSON.stringify(errorMsg) + '\n'));
+          
           // Continue with next company even if one fails
         }
       }
@@ -191,11 +322,14 @@ export async function POST(request: NextRequest) {
 
       console.log(`Successfully scraped ${companies.length} companies`);
 
-      return NextResponse.json({
-        success: true,
-        count: companies.length,
-        companies: companies,
-      });
+      // Send completion message
+      const completionMsg = { 
+        type: 'complete',
+        message: `Successfully scraped ${companies.length} companies`,
+        totalScraped: companies.length,
+        totalFound: companyLinks.length
+      };
+      controller.enqueue(encoder.encode(JSON.stringify(completionMsg) + '\n'));
 
     } catch (error) {
       await browser.close();
@@ -204,12 +338,13 @@ export async function POST(request: NextRequest) {
 
   } catch (error) {
     console.error('Scraping error:', error);
-    return NextResponse.json(
-      { 
-        error: 'Failed to scrape companies',
-        details: error instanceof Error ? error.message : 'Unknown error'
-      },
-      { status: 500 }
-    );
+    
+    // Send error message
+    const errorMsg = { 
+      type: 'error',
+      message: 'Failed to scrape companies',
+      details: error instanceof Error ? error.message : 'Unknown error'
+    };
+    controller.enqueue(encoder.encode(JSON.stringify(errorMsg) + '\n'));
   }
 } 
