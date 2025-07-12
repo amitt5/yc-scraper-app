@@ -43,26 +43,38 @@ export async function POST(request: NextRequest) {
     try {
       // Visit the Y Combinator companies list page
       console.log('Visiting YC companies page...');
-      await page.goto(url, { waitUntil: 'networkidle' });
+      await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
 
-      // Wait for the results section to load
-      console.log('Waiting for results section to load...');
-      await page.waitForSelector('._results_i9oky_343', { timeout: 10000 });
+      // Wait for the page content to load (using a more general approach)
+      console.log('Waiting for page content to load...');
+      await page.waitForTimeout(3000); // Give time for content to load
 
-      // Extract company profile links using the actual CSS classes from the HTML
+      // Extract company profile links using stable href patterns instead of dynamic CSS classes
       console.log('Extracting company links...');
       
       const companyLinks = await page.evaluate(() => {
-        // Get all company link elements using the actual class from HTML
-        const companyElements = document.querySelectorAll('a._company_i9oky_355');
+        // Get all links that point to individual company pages
+        // Use href pattern instead of dynamic CSS classes
+        const allLinks = document.querySelectorAll('a[href*="/companies/"]');
         
-        const companyUrls = Array.from(companyElements)
+        const companyUrls = Array.from(allLinks)
           .map(link => (link as HTMLAnchorElement).href)
-          .filter(href => href && href.includes('/companies/'))
+          .filter(href => {
+            // Only include individual company pages, not the main companies directory
+            return href && 
+                   href.includes('ycombinator.com/companies/') && 
+                   !href.endsWith('/companies') && 
+                   !href.endsWith('/companies/') &&
+                   !href.includes('/companies?') && // Exclude filtered search pages
+                   !href.includes('/companies/founders') && // Exclude founder directory
+                   !href.includes('/companies/industry/') && // Exclude industry pages
+                   !href.includes('/companies/location/') && // Exclude location pages
+                   !href.includes('/companies/batch/') && // Exclude batch pages
+                   !href.includes('#') && // Exclude anchor links
+                   !href.includes('/jobs'); // Exclude job links
+          })
           // Remove duplicates
-          .filter((url, index, array) => array.indexOf(url) === index)
-          // Limit to first 10 for testing
-          .slice(0, 10);
+          .filter((url, index, array) => array.indexOf(url) === index);
 
         return companyUrls;
       });
@@ -94,14 +106,21 @@ export async function POST(request: NextRequest) {
         try {
           console.log(`Scraping company ${index + 1}/${companyLinks.length}: ${companyUrl}`);
           
-          await page.goto(companyUrl, { waitUntil: 'networkidle' });
+          // Use domcontentloaded instead of networkidle to avoid hanging
+          await page.goto(companyUrl, { 
+            waitUntil: 'domcontentloaded', 
+            timeout: 15000 
+          });
+          
+          // Wait a bit for content to render after DOM loads
+          await page.waitForTimeout(2000);
           
           // Wait for company data to load
           try {
             await page.waitForSelector('h1.text-3xl', { timeout: 5000 });
           } catch (e) {
-            // If specific selector not found, wait a bit and continue
-            await page.waitForTimeout(2000);
+            // If specific selector not found, wait a bit more and continue
+            await page.waitForTimeout(1000);
           }
 
           // Extract company name, title, and description using exact selectors from the HTML
@@ -160,7 +179,7 @@ export async function POST(request: NextRequest) {
           }
 
           // Small delay to be respectful
-          await page.waitForTimeout(1000);
+          await page.waitForTimeout(500);
 
         } catch (error) {
           console.error(`Error scraping company ${companyUrl}:`, error);
